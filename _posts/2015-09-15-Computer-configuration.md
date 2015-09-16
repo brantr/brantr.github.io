@@ -41,7 +41,7 @@ alias crimson='ssh -Y brant@128.114.67.60'
 
 Create a hacked ~/.bashrc, setting a fancy terminal prompt, source ~/.alias includes ~/bin in your $PATH.
 
-```
+{% highlight bash %}
 if [ "$PS1" ]; then
 	TERM="xterm-color"
 	export TERM
@@ -88,7 +88,7 @@ if [ "$PS1" ]; then
     PATH=~/bin:"${PATH}"
 
 fi
-```
+{% endhighlight %}
 
 ### Make SSH keys ###
 
@@ -160,9 +160,10 @@ Get Xcode through the Apple App Store.
 
 Then, in a terminal
 
-```
+{% highlight bash %}
 $ xcode-select --install
-```
+{% endhighlight %}
+
 And follow the prompts to install Xcode.
 
 ### Bundler ###
