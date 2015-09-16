@@ -311,7 +311,7 @@ $  echo "int main() {" >> main.c
 $  echo "#pragma omp parallel" >> main.c
 $  echo "printf(\"Hello from thread %d, nthreads %d\\n\", omp_get_thread_num(), omp_get_num_threads());" >> main.c
 $  echo "}" >> main.c
-$  clang -fopenmp hello.c -o hello
+$  clang -fopenmp main.c -o hello
 $  ./hello
 {% endhighlight %}
 
@@ -343,7 +343,50 @@ $  cd openmpi-1.10.0
 $  CC=clang CXX=clang++ CXXFLAGS="-stdlib=libstdc++" LDFLAGS="-stdlib=libstdc++" ./configure --prefix=/Users/brant/code/openmpi 
 $  make -j 4
 $  make install
-$  clang -fopenmp hello.c -o hello
-$  ./hello
 {% endhighlight %}
 
+
+### Revise ~/.bashrc ###
+
+Revise ~/.bashrc for openmpi, adjusting these lines:
+
+{% highlight bash %}
+    export PATH=/Users/brant/code/clang-omp/bin:/Users/brant/code/openmpi/bin:$PATH
+    export C_INCLUDE_PATH=/Users/brant/code/clang-omp/include:/Users/brant/code/libomp/include:/Users/brant/code/openmpi/include:$C_INCLUDE_PATH
+    export CPLUS_INCLUDE_PATH=/Users/brant/code/clang-omp/include:/Users/brant/code/libomp/include:/Users/brant/code/openmpi/include:$CPLUS_INCLUDE_PATH
+    export LIBRARY_PATH=/Users/brant/code/clang-omp/lib:/Users/brant/code/libomp/lib:/Users/brant/code/openmpi/lib:$LIBRARY_PATH
+    export DYLD_LIBRARY_PATH=/Users/brant/code/clang-omp/lib:/Users/brant/code/libomp/lib:/Users/brant/code/openmpi/lib:$DYLD_LIBRARY_PATH
+
+{% endhighlight %}
+
+
+### Test OpenMPI ###
+{% highlight bash %}
+$  cd ~/code
+$  mkdir test_mpi
+$  cd test_mpi/
+$  echo "#include <mpi.h>" > main.c
+$  echo "#include <stdio.h>" >> main.c
+$  echo "int main(int argc, char **argv) {" >> main.c
+$  echo "int myid, numprocs, i;" >> main.c
+$  echo "MPI_Init(&argc,&argv);" >> main.c
+$  echo "MPI_Comm_rank(MPI_COMM_WORLD,&myid);" >> main.c
+$  echo "MPI_Comm_size(MPI_COMM_WORLD,&numprocs);" >> main.c
+$  echo "for(i=0;i<numprocs;i++){" >> main.c
+$  echo "if(myid==i){printf(\"Hello from proc %d\\n\",i);}}" >> main.c
+$  echo "MPI_Finalize();" >> main.c
+$  echo "}" >> main.c
+$  mpicc main.c -o hello
+$  mpirun -np 4 ./hello
+{% endhighlight %}
+
+
+You should see something like:
+
+{% highlight shell-session %}
+$  mpirun -np 4 ./hello 
+Hello from proc 1
+Hello from proc 2
+Hello from proc 0
+Hello from proc 3
+{% endhighlight %}
