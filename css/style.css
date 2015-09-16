@@ -4,6 +4,8 @@ body {
   color: #ececec;
   padding: 0;
   margin: 0;
+  margin-left:25px;
+  margin-right:25px;
 }
 ul {
   margin: 0;
