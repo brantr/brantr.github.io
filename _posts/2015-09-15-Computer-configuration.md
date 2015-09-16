@@ -49,6 +49,8 @@ Under "Shell" tab, select "Close the window" from the dropdown.
 
 Under "Window" tab, click the Color & Effect under Background, then set 70% opacity, 50% blur.
 
+Turn off the visual and audio bells.
+
 Put a terminal link in the dock.
 
 ***
@@ -347,6 +349,15 @@ $  echo "}" >> main.c
 $  clang -fopenmp main.c -o hello
 $  ./hello
 {% endhighlight %}
+
+{% highlight c}
+#include <omp.h>
+#include <stdio.h>
+int main() {
+#pragma omp parallel
+    printf("Hello from thread %d, nthreads %d\n", omp_get_thread_num(), omp_get_num_threads());
+}
+{% endhighlight}
 
 You should see something like:
 
