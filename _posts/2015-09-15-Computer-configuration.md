@@ -5,6 +5,55 @@ title: Configuring a Mac OS X Computer
 
 ---
 
+Usability Configuration
+---------------------
+
+Undo natural scroll, set fast tract, right click.
+
+Deactivate all iCloud.
+
+Add ucsc google account: mail, contacts, calendars, messages.
+
+Mission Control->Hot corners, bottom left Mission Control, upper left Desktop, uncheck group windows by applications.
+
+Turn on magnification in the Dock.
+
+Add Applications, Documents to the Dock.
+
+Fix Finder sidebar.
+
+Clear crap off dock.
+
+---
+
+Install Deja Vu Fonts
+---------------------
+
+Download Deja Vu Fonts from
+
+<http://dejavu-fonts.org/wiki/Main_Page>
+
+and then use the Font Book app to add them.
+
+***
+
+
+Configure Terminal
+------------------
+
+Open the Terminal program, then -> Preferences
+
+Under "Text" tab, select Deja Vu Sans Mono 11pt.
+
+Under "Shell" tab, select "Close the window" from the dropdown.
+
+Under "Window" tab, click the Color & Effect under Background, then set 70% opacity, 50% blur.
+
+Put a terminal link in the dock.
+
+***
+
+
 Set up bash
 ------------
 
@@ -44,17 +93,20 @@ alias crimson='ssh -Y brant@128.114.67.60'
 Create a hacked ~/.bashrc, setting a fancy terminal prompt, source ~/.alias includes ~/bin in your $PATH.
 
 {% highlight bash %}
+
+
+
 if [ "$PS1" ]; then
 	TERM="xterm-color"
 	export TERM
 	CLICOLOR=1
 	LSCOLORS="GxfxcxdxCxegedabagacad"
-	export CLICOLORin
+	export CLICOLOR
 	export LSCOLORS
 
 	PS1="\[\033[1;37m\][\t][\u@\h:\w]$\[\033[0m\] "
     # If this is an xterm set the title to user@host:dir
-    case $TERM 
+    case $TERM in
     xterm*)
         PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
         ;;
@@ -92,6 +144,8 @@ if [ "$PS1" ]; then
 fi
 {% endhighlight %}
 
+Then source ~/.bashrc
+
 ### Make SSH keys ###
 
 {% highlight bash %}
@@ -120,29 +174,8 @@ $ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl subli
 
 ***
 
-Install Deja Vu Fonts
----------------------
 
-Download Deja Vu Fonts from
 
-<http://dejavu-fonts.org/wiki/Main_Page>
-
-and then use the Font Book app to add them.
-
-***
-
-Configure Terminal
-------------------
-
-Open the Terminal program, then -> Preferences
-
-Under "Text" tab, select Deja Vu Sans Mono 11pt.
-
-Under "Shell" tab, select "Close the window" from the dropdown.
-
-Under "Window" tab, click the Color & Effect under Background, then set 70% opacity, 50% blur.
-
-***
 
 Install GitHub Desktop
 ----------------------
