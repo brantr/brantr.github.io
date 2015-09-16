@@ -12,30 +12,32 @@ Set up bash
 
 Do:
 
-```
-$cd
-$mkdir bin
-```
+{% highlight bash %}
+$ cd
+$ mkdir bin
+{% endhighlight %}
+
 
 ### Bash Profile ###
 
 Create a ~/.bash_profile:
 
-```
+{% highlight bash %}
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
-```
+{% endhighlight %}
+
 
 ### Alias file ###
 
 Create an ~/.alias file:
 
-```
+{% highlight bash %}
 alias brown='ssh -Y brant@brown.as.arizona.edu'
 alias orange='ssh -X brant@orange.as.arizona.edu'
 alias crimson='ssh -Y brant@128.114.67.60'
-```
+{% endhighlight %}
 
 ### Bashrc ###
 
@@ -92,10 +94,10 @@ fi
 
 ### Make SSH keys ###
 
-```
-$cd
-$ssh-keygen -t rsa
-```
+{% highlight bash %}
+$ cd
+$ ssh-keygen -t rsa
+{% endhighlight %}
 
 ***
 
@@ -111,10 +113,10 @@ and install the license.
 
 ### Short cut ###
 
-```
-$cd ~/bin
-$ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl sublime
-```
+{% highlight bash %}
+$ cd ~/bin
+$ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl sublime
+{% endhighlight %}
 
 ***
 
@@ -168,12 +170,32 @@ And follow the prompts to install Xcode.
 
 ### Bundler ###
 
-```
-$gem install bundler
-```
+{% highlight bash %}
+$ gem install bundler
+{% endhighlight %}
 
 CD into the github io directory, and then
 
-```
-$bundle install
-```
+{% highlight bash %}
+$ bundle install
+{% endhighlight %}
+
+***
+
+Install pip
+-----------
+
+Download pip from
+
+<https://pypi.python.org/pypi/pip>
+
+Expand the tarball, and then 
+
+{% highlight bash %}
+$ sudo python setup.py install
+{% endhighlight %}
+
+Install Pygments
+{% highlight bash %}
+$  sudo pip install Pygments
+{% endhighlight %}
