@@ -182,8 +182,8 @@ $ bundle install
 
 ***
 
-Install pip
------------
+Install pip and Pygments
+------------------------
 
 Download pip from
 
@@ -199,3 +199,151 @@ Install Pygments
 {% highlight bash %}
 $  sudo pip install Pygments
 {% endhighlight %}
+
+***
+
+Install CMake
+-------------
+
+Go to 
+
+<http://www.cmake.org/download/>
+
+and get and run the binary installer.
+
+Drag the icon to Applications.
+
+Install the cmake symlinks to /usr/local/bin:
+
+{% highlight bash %}
+$ sudo "/Applications/CMake.app/Contents/bin/cmake-gui" --install
+{% endhighlight %}
+
+
+***
+
+Install clang-omp, OpenMP runtime, OpenMPI binaries
+-----------------
+
+### clang-omp ###
+
+Get clang-omp:
+
+<http://clang-omp.github.io>
+
+Install it:
+
+{% highlight bash %}
+$  cd ~/code
+$  mkdir clang-omp
+$  cd clang-omp/
+$  git clone https://github.com/clang-omp/llvm
+$  git clone https://github.com/clang-omp/compiler-rt_trunk llvm/projects/compiler-rt
+$  git clone -b clang-omp https://github.com/clang-omp/clang llvm/tools/clang
+$  cd ~/code/clang-omp/
+$  mkdir build
+$  cd build
+$  cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX:PATH=/Users/brant/code/clang-omp/ ../llvm
+$  make all install
+{% endhighlight %}
+
+
+### Change ~/.bashrc ###
+
+Add these to .bashrc:
+
+{% highlight bash %}
+export PATH=/Users/brant/code/clang-omp/bin:$PATH
+export C_INCLUDE_PATH=/Users/brant/code/clang-omp/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/Users/brant/code/clang-omp/include:$CPLUS_INCLUDE_PATH
+export LIBRARY_PATH=/Users/brant/code/clang-omp/lib:$LIBRARY_PATH
+export DYLD_LIBRARY_PATH=/Users/brant/code/clang-omp/lib:$DYLD_LIBRARY_PATH
+{% endhighlight %}
+
+Source ~/.bashrc
+{% highlight bash %}
+$ source ~/.bashrc
+{% endhighlight %}
+
+### Install the Intel OpenMP Runtime Library ###
+
+Get the OpenMP runtime library code:
+
+<https://www.openmprtl.org/download#stable-releases>
+
+{% highlight bash %}
+$  cd ~/code
+$  mkdir libomp
+$  cd libomp/
+$  cp ~/Downloads/libomp_20150701_oss.tar .
+$  tar -zxvf libomp_20150701_oss.tar 
+$  mkdir build
+$  cd build
+$  cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX:PATH=/Users/brant/code/libomp/ -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_CC_COMPILER=clang ../libomp_oss
+$  make all install
+{% endhighlight %}
+
+### Revise ~/.bashrc ###
+
+Revise ~/.bashrc, adjusting these lines:
+
+{% highlight bash %}
+export PATH=/Users/brant/code/clang-omp/bin:$PATH
+export C_INCLUDE_PATH=/Users/brant/code/clang-omp/include:/Users/brant/code/libomp/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/Users/brant/code/clang-omp/include:/Users/brant/code/libomp/include:$CPLUS_INCLUDE_PATH
+export LIBRARY_PATH=/Users/brant/code/clang-omp/lib:/Users/brant/code/libomp/lib:$LIBRARY_PATH
+export DYLD_LIBRARY_PATH=/Users/brant/code/clang-omp/lib:/Users/brant/code/libomp/lib:$DYLD_LIBRARY_PATH
+{% endhighlight %}
+
+Source ~/.bashrc
+{% highlight bash %}
+$ source ~/.bashrc
+{% endhighlight %}
+
+### Verify clang-omp + the OpenMP runtime is working ###
+{% highlight bash %}
+$  cd ~/code
+$  mkdir test_omp
+$  cd test_omp/
+$  echo "#include <omp.h>" > main.c
+$  echo "#include <stdio.h>" >> main.c
+$  echo "int main() {" >> main.c
+$  echo "#pragma omp parallel" >> main.c
+$  echo "printf(\"Hello from thread %d, nthreads %d\\n\", omp_get_thread_num(), omp_get_num_threads());" >> main.c
+$  echo "}" >> main.c
+$  clang -fopenmp hello.c -o hello
+$  ./hello
+{% endhighlight %}
+
+You should see something like:
+
+{% highlight shell-session %}
+$ ./hello 
+Hello from thread 0, nthreads 4
+Hello from thread 1, nthreads 4
+Hello from thread 3, nthreads 4
+Hello from thread 2, nthreads 4
+{% endhighlight %}
+
+### Download and install OpenMPI ###
+
+Download OpenMPI at:
+
+<http://www.open-mpi.org/software/ompi/>
+
+Get the latest tarball, place in ~/code/openmpi/
+
+{% highlight bash %}
+$  cd ~/code
+$  mkdir openmpi
+$  cd openmpi/
+$  cp ~/Downloads/openmpi-1.10.0.tar.bz2 .
+$  tar -zxvf openmpi-1.10.0.tar.bz2 
+$  cd openmpi-1.10.0
+$  CC=clang CXX=clang++ CXXFLAGS="-stdlib=libstdc++" LDFLAGS="-stdlib=libstdc++" ./configure --prefix=/Users/brant/code/openmpi 
+$  make -j 4
+$  make install
+$  clang -fopenmp hello.c -o hello
+$  ./hello
+{% endhighlight %}
+
