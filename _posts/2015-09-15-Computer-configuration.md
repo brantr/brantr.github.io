@@ -300,6 +300,8 @@ Source ~/.bashrc
 $ source ~/.bashrc
 {% endhighlight %}
 
+### Remove Xcode ###
+
 ### Install the Intel OpenMP Runtime Library ###
 
 Get the OpenMP runtime library code:
