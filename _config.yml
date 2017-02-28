@@ -5,7 +5,7 @@ locale: en_US
 description: Brant Robertson's github.io Site
 logo: banner.jpg
 search: true
-url: http://localhost:4000
+url: http://brantr.github.io
 
 # Jekyll configuration
 
