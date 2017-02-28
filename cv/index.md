@@ -28,10 +28,7 @@ Santa Cruz, CA 95064
 
 ##### *Electronic Addresses*
 **Email:**<a href="mailto:brant@ucsc.edu">brant@ucsc.edu</a>  
-**Web:**  
-*[GitHub IO](http://brantr.github.io)  
-*[UCSC Research Group](https://robertson.sites.ucsc.edu)  
----
+**Web:** [GitHub IO](http://brantr.github.io)   [UCSC Research Group](https://robertson.sites.ucsc.edu)  
 
 ## Education
 
@@ -43,6 +40,10 @@ Santa Cruz, CA 95064
 ## Employment
 
 
+* Associate Professor, Department of Astrophysics and Astronomy, University of California, Santa Cruz 2015-Present
+* Assistant Professor, Department of Astronomy, University of Arizona 2011-2015
+* Hubble Fellow, California Institute of Technology 2009-2011
+* Spitzer and Institute Fellow, Kavli Institute for Cosmological Physics and Enrico Fermi Institute, University of Chicago 2006-2009
 
 
 <ul class="post-list">
