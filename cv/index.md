@@ -23,13 +23,14 @@ Santa Cruz, CA 95064
 
 ##### *Phone and Fax*
 
-**Phone:** (831) 459-4903
-**Fax:** (831) 459-5265
+**Phone:** (831) 459-4903  
+**Fax:** (831) 459-5265  
 
 ##### *Electronic Addresses*
-**Email:**<a href="mailto:brant@ucsc.edu">brant@ucsc.edu</a>
-**Web:**[GitHub IO](http://brantr.github.io)
-
+**Email:**<a href="mailto:brant@ucsc.edu">brant@ucsc.edu</a>  
+**Web:**  
+*[GitHub IO](http://brantr.github.io)  
+*[UCSC Research Group](https://robertson.sites.ucsc.edu)  
 ---
 
 ## Education
