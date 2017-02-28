@@ -21,6 +21,15 @@ University of California, Santa Cruz
 1156 High Street, ISB 335  
 Santa Cruz, CA 95064  
 
+##### *Phone and Fax*
+
+**Phone:** (831) 459-4903
+**Fax:** (831) 459-5265
+
+##### *Electronic Addresses*
+**Email:**<a href="mailto:brant@ucsc.edu">brant@ucsc.edu</a>
+**Web:**[GitHub IO](http://brantr.github.io)
+
 ---
 
 ## Education
@@ -29,6 +38,9 @@ Santa Cruz, CA 95064
 * M.A., Astronomy, Harvard University, 2003  
 * B.S., Physics & Astronomy, University of Washington, 2001  
   *cum laude, with Distinction in Physics*  
+
+## Employment
+
 
 
 
