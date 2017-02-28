@@ -1,43 +1,53 @@
-# Name of your blog (this will show up at the top of your page and in the RSS feed)
-name: Test
+# Site wide configuration
 
-# Short description (goes below the title; it will also be used in the RSS feed)
-description: This is a sample Jekyll Blog.
+title: Feedback
+locale: en_US
+description: Brant Robertson's github.io Site
+logo: banner.jpg
+search: true
+url: http://localhost:4000
 
-# Your name, as you want it to appear underneath each post and in the footer
-author: Brant Robertson
+# Jekyll configuration
 
-# Your email if you want it to be linked on the contact page
-author_email: brant@ucsc.edu
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-# The directory for category index pages. Change it to something else if
-# for example you want links like /categories/category1 instead of /category1
-category_dir: /
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
 
-# Uncomment if you are planning to run the blog in a subdirectory
-# Note - if you enable this, and attempt to view your site locally you have to use the baseurl in your local path.
-# Example, you must use http://localhost:4000/path/to/blog
-#baseurl: /path/to/blog 
-baseurl: 
+mathjax: true
 
-# The URL of your actual domain. This will be used to make absolute links in the RSS feed.
-url: http://brantr.github.io
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
-#### Under the Hood Stuff #####
+include:
+  - cv
 
-# Use rdiscount as the markdown engine because it generates html5 compliant code for stuff like footnotes
-# If you use maroku (default engine) some of your generated pages may not validate or lint as html5
-# If you don't have it install it via gem install rdiscount
-markdown: rdiscount
 
-# Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
-permalink: pretty
-
-# How many articles do you wish to appear on the front page:
-paginate: 3
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
-
-#use pygments as the highlighter
-highlighter: pygments
+# Site owner
+owner:
+  name: Brant Robertson
+  avatar: brant.jpeg
+  email: brant@ucsc.edu
+  twitter: #brant_robertson
+  github: #brantr
+  google:
+    plus: #brant.robertson
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
