@@ -16,19 +16,19 @@ Curriculum Vita for Brant Robertson.
 
 ## Contact Information
 
-Department of Astronomy and Astrophysics
-University of California, Santa Cruz
-1156 High Street, ISB 335
-Santa Cruz, CA 95064
+Department of Astronomy and Astrophysics  
+University of California, Santa Cruz  
+1156 High Street, ISB 335  
+Santa Cruz, CA 95064  
 
 ---
 
 ## Education
 
-Ph.D., Astronomy, Harvard University, 2006
-M.A., Astronomy, Harvard University, 2003
-B.S., Physics & Astronomy, University of Washington, 2001
-*cum laude, with Distinction in Physics*
+* Ph.D., Astronomy, Harvard University, 2006  
+* M.A., Astronomy, Harvard University, 2003  
+* B.S., Physics & Astronomy, University of Washington, 2001  
+  *cum laude, with Distinction in Physics*  
 
 
 
