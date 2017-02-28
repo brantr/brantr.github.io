@@ -15,7 +15,7 @@ image:
 
 ## Contact Information
 
-### *Mailing Address*
+##### *Mailing Address*
 Department of Astronomy and Astrophysics  
 University of California, Santa Cruz  
 1156 High Street, ISB 335  
