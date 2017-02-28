@@ -9,13 +9,13 @@ image:
   creditlink: http://brantr.github.io
 ---
 
-Curriculum Vita for Brant Robertson.
 
 * Table of Contents
 {:toc}
 
 ## Contact Information
 
+### *Mailing Address*
 Department of Astronomy and Astrophysics  
 University of California, Santa Cruz  
 1156 High Street, ISB 335  
