@@ -1,7 +1,7 @@
 ---
 layout: page
-title: curriculum vita
-excerpt: "CV for Brant Robertson"
+title: Publications
+excerpt: "Publications by Brant Robertson"
 modified: 2017-02-28T01:24:00
 image:
   feature: banner.jpg
@@ -13,42 +13,7 @@ image:
 * Table of Contents
 {:toc}
 
-## Contact Information
-
-##### *Mailing Address*
-Department of Astronomy and Astrophysics  
-University of California, Santa Cruz  
-1156 High Street, ISB 335  
-Santa Cruz, CA 95064  
-
-##### *Phone and Fax*
-
-**Phone:** (831) 459-4903  
-**Fax:** (831) 459-5265  
-
-##### *Electronic Addresses*
-**Email:** <a href="mailto:brant@ucsc.edu">brant@ucsc.edu</a>  
-**Web:** [GitHub IO](http://brantr.github.io)   [UCSC Research Group](https://robertson.sites.ucsc.edu)  
-
-## Education
-
-* Ph.D., Astronomy, Harvard University, 2006  
-* M.A., Astronomy, Harvard University, 2003  
-* B.S., Physics & Astronomy, University of Washington, 2001  
-  *cum laude, with Distinction in Physics*  
-
-## Employment
-
-
-* Associate Professor, Department of Astrophysics and Astronomy, University of California, Santa Cruz 2015-Present
-* Assistant Professor, Department of Astronomy, University of Arizona 2011-2015
-* Hubble Fellow, California Institute of Technology 2009-2011
-* Spitzer and Institute Fellow, Kavli Institute for Cosmological Physics and Enrico Fermi Institute, University of Chicago 2006-2009
-
-
-<strong>First and second author publications by group members</strong>
-
-<hr />
+## First and Second Author Publications by Group Members
 
 Schneider, Evan E. &amp; Robertson, Brant E. 2015, The Astrophysical Journal Supplement Series <a href="http://adsabs.harvard.edu/abs/2015ApJS..217...24S">CHOLLA: A New Massively Parallel Hydrodynamics Code for Astrophysical Simulation</a>
 
@@ -98,9 +63,8 @@ van den Bosch, Frank C., Robertson, Brant E., Dalcanton, Julianne J., &amp; de 
 
 &nbsp;
 
-<strong>Collaborative publications by group members</strong>
+## Collaborative Publications by Group Members
 
-<hr />
 
 &nbsp;
 
