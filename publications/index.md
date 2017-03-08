@@ -15,11 +15,14 @@ image:
 
 ## First and Second Author Publications by Group Members
 
-Schneider, Evan E. &amp; Robertson, Brant E. 2015, The Astrophysical Journal Supplement Series <a href="http://adsabs.harvard.edu/abs/2015ApJS..217...24S">CHOLLA: A New Massively Parallel Hydrodynamics Code for Astrophysical Simulation</a>
+Schneider, Evan E. &amp; Robertson, Brant E. 2017, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2017ApJ...834..144S">
+Hydrodynamical Coupling of Mass and Momentum in Multiphase Galactic Winds</a>
 
-Robertson, Brant E., Ellis, Richard S., Furlanetto, Steven R., &amp; Dunlop, James S. 2015, The Astrophysical Journal <a href="http://adsabs.harvard.edu/abs/2015ApJ...802L..19R">Cosmic Reionization and Early Star-forming Galaxies: A Joint Analysis of New Constraints from Planck and the Hubble Space Telescope</a>
+Schneider, Evan E. &amp; Robertson, Brant E. 2015, The Astrophysical Journal Supplement Series, <a href="http://adsabs.harvard.edu/abs/2015ApJS..217...24S">CHOLLA: A New Massively Parallel Hydrodynamics Code for Astrophysical Simulation</a>
 
-Robertson, Brant E., Ellis, Richard S., Dunlop, James S., McLure, Ross J., Stark, Dan P., &amp; McLeod, Derek 2014, The Astrophysical Journal <a href="http://adsabs.harvard.edu/abs/2014ApJ...796L..27R">Accounting for Cosmic Variance in Studies of Gravitationally Lensed High-redshift Galaxies in the Hubble Frontier Field Clusters</a>
+Robertson, Brant E., Ellis, Richard S., Furlanetto, Steven R., &amp; Dunlop, James S. 2015, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2015ApJ...802L..19R">Cosmic Reionization and Early Star-forming Galaxies: A Joint Analysis of New Constraints from Planck and the Hubble Space Telescope</a>
+
+Robertson, Brant E., Ellis, Richard S., Dunlop, James S., McLure, Ross J., Stark, Dan P., &amp; McLeod, Derek 2014, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2014ApJ...796L..27R">Accounting for Cosmic Variance in Studies of Gravitationally Lensed High-redshift Galaxies in the Hubble Frontier Field Clusters</a>
 
 Schenker, Matthew A., Robertson, Brant E., Ellis, Richard S., Ono, Yoshiaki, McLure, Ross J., Dunlop, James S., Koekemoer, Anton, Bowler, Rebecca A. A., Ouchi, Masami, Curtis-Lake, Emma, Rogers, Alexander B., Schneider, Evan, Charlot, Stephane, Stark, Daniel P., Furlanetto, Steven R., &amp; Cirasuolo, Michele 2013, The Astrophysical Journal <a href="http://adsabs.harvard.edu/abs/2013ApJ...768..196S">The UV Luminosity Function of Star-forming Galaxies via Dropout Selection at Redshifts z ~ 7 and 8 from the 2012 Ultra Deep Field Campaign</a>
 
@@ -67,6 +70,24 @@ van den Bosch, Frank C., Robertson, Brant E., Dalcanton, Julianne J., &amp; de 
 
 
 &nbsp;
+
+
+Dunlop, J. S., McLure, R. J., Biggs, A. D., Geach, J. E., Michałowski, M. J., Ivison, R. J., Rujopakarn, W., van Kampen, E., Kirkpatrick, A., Pope, A., Scott, D., Swinbank, A. M., Targett, T. A., Aretxaga, I., Austermann, J. E., Best, P. N., Bruce, V. A., Chapin, E. L., Charlot, S., Cirasuolo, M., Coppin, K., Ellis, R. S., Finkelstein, S. L., Hayward, C. C., Hughes, D. H., Ibar, E., Jagannathan, P., Khochfar, S., Koprowski, M. P., Narayanan, D., Nyland, K., Papovich, C., Peacock, J. A., Rieke, G. H., <strong>Robertson, B.</strong>, Vernstrom, T., Werf, P. P. van der, Wilson, G. W., &amp; Yun, M. 2017, Monthly Notices of the Royal Astronomical Society, <a href="http://adsabs.harvard.edu/abs/2017MNRAS.466..861D">A deep ALMA image of the Hubble Ultra Deep Field</a>
+
+Scoville, Nick, Murchikova, Lena, Walter, Fabian, Vlahakis, Catherine, Koda, Jin; Vanden Bout, Paul, Barnes, Joshua, Hernquist, Lars, Sheth, Kartik, Yun, Min; Sanders, David, Armus, Lee, Cox, Pierre, Thompson, Todd; <strong>Robertson, Brant,</strong> Zschaechner, Laura, Tacconi, Linda, Torrey, Paul, Hayward, Christopher C., Genzel, Reinhard, Hopkins, Phil, van der Werf, Paul, &amp; Decarli, Roberto 2017, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2017ApJ...836...66S">ALMA Resolves the Nuclear Disks of Arp 220</a>
+
+Rujopakarn, W., Dunlop, J. S., Rieke, G. H., Ivison, R. J., Cibinel, A., Nyland, K., Jagannathan, P., Silverman, J. D., Alexander, D. M., Biggs, A. D., Bhatnagar, S., Ballantyne, D. R., Dickinson, M., Elbaz, D., Geach, J. E., Hayward, C. C., Kirkpatrick, A., McLure, R. J., Michałowski, M. J., Miller, N. A., Narayanan, D., Owen, F. N., Pannella, M., Papovich, C., Pope, A., Rau, U., Robertson, B. E., Scott, D., Swinbank, A. M., van der Werf, P., van Kampen, E., Weiner, B. J., &amp;Windhorst, R. A. 2016, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2016ApJ...833...12R">
+VLA and ALMA Imaging of Intense Galaxy-wide Star Formation in $z\sim 2$ Galaxies</a>
+
+Alavi, Anahita, Siana, Brian, Richard, Johan, Rafelski, Marc, Jauzac, Mathilde, Limousin, Marceau, Freeman, William R., Scarlata, Claudia, <strong>Robertson, Brant</strong>, Stark, Daniel P., Teplitz, Harry I., &amp; Desai, Vandana 2016, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2016ApJ...832...56A">
+The Evolution of the Faint End of the UV Luminosity Function during the Peak Epoch of Star Formation ($1 < z < 3$)</a>
+
+Nakajima, Kimihiko, Ellis, Richard S., Iwata, Ikuru, Inoue, Akio K., Kusakabe, Haruka, Ouchi, Masami, &amp; <strong>Robertson, Brant E.</strong> 2016 The Astrophysical Journal Letters<a href="http://adsabs.harvard.edu/abs/2016ApJ...831L...9N">A Hard Ionizing Spectrum in $z = 3-4$ Ly$\alpha$ Emitters with Intense [O III] Emission: Analogs of Galaxies in the Reionization Era?</a>
+
+McGuire, J. T. W., Tanvir, N. R., Levan, A. J., Trenti, M., Stanway, E. R., Shull, J. M., Wiersema, K., Perley, D. A., Starling, R. L. C., Bremer, M., Stocke, J. T., Hjorth, J., Rhoads, J. E., Curtis-Lake, E., Schulze, S., Levesque, E. M., <strong>Robertson, B.</strong>, Fynbo, J. P. U., Ellis, R. S., &amp; Fruchter, A. S. 2016, The Astrophysical Journal, <a href="http://adsabs.harvard.edu/abs/2016ApJ...825..135M">Detection of Three Gamma-ray Burst Host Galaxies at $z\sim 6$</a>
+
+Curtis-Lake, E., McLure, R. J., Dunlop, J. S., Rogers, A. B., Targett, T., Dekel, A., Ellis, R. S., Faber, S. M., Ferguson, H. C., Grogin, N. A., Kocevski, D. D., Koekemoer, A. M., Lai, K., Mármol-Queraltó, E., <strong>Robertson, B. E.</strong> 2016, Monthly Notices of the Royal Astronomical Society<a href="http://adsabs.harvard.edu/abs/2016MNRAS.457..440C">
+Non-parametric analysis of the rest-frame UV sizes and morphological disturbance amongst $L_\star$ galaxies at $4 < z < 8$</a>
 
 Stark, Daniel P., Walth, Gregory, Charlot, Stéphane, Clément, Benjamin, Feltre, Anna, Gutkin, Julia, Richard, Johan, Mainali, Ramesh, <strong>Robertson,</strong> <strong> Brant</strong>, Siana, Brian, Tang, Mengtao, &amp; Schenker, Matthew 2015, Monthly Notices of the Royal Astronomical Society <a href="http://adsabs.harvard.edu/abs/2015MNRAS.454.1393S">Spectroscopic detection of C IV λ1548 in a galaxy at z = 7.045: implications for the ionizing spectra of reionization-era galaxies</a>
 
