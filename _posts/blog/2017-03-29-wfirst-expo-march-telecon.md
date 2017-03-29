@@ -1,13 +1,14 @@
 ---
 layout: post
 categories: blog
-title: WFIRST EXPO March Telecon 03/29/2017
+title: WFIRST EXPO March Telecon
 use_math: true
 ---
 
 * Table of Contents
 {:toc}
 
+Telecon on 03/29/2017 at 11am PDT
 
 ## Attendance
 
