@@ -63,7 +63,7 @@ easy to measure.
 
 Here are the JWST PSFs:
 
-[JWST PSFs (tarball)])(http://mips.as.arizona.edu/~cnaw/psf.tgz)
+[JWST PSFs (tarball)](http://mips.as.arizona.edu/~cnaw/psf.tgz)
 
 Using the F090W PSF, I computed the following aperture
 corrections:
