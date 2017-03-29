@@ -10,8 +10,7 @@ url: http://brantr.github.io
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-#markdown:    kramdown
-markdown:    maruku
+markdown:    kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
