@@ -5,6 +5,8 @@ title: Restarting the research blog.
 use_math: true
 ---
 
+{:toc}
+
 I've decided to (re)start the research blog to keep a better
 record of everything I've been up to. Most of these entries
 will be in bulleted form for convenience.
@@ -33,7 +35,7 @@ proposed HST-JEWELS fields.
 ![JEWELS AREA]({{ site.url }}/images/jewels_area.png)
 
 The figure was created by smoothing a dark matter density
-field at $$z\sim7$$ and then colorizing the density
+field at $$ z\sim7 $$ and then colorizing the density
 field based on the smoothed overdensity.  The scripts for
 producing this figure sit on gray:~/Desktop/hst_cycle_25/capak/.
 
