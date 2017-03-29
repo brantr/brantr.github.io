@@ -5,6 +5,7 @@ title: Restarting the research blog.
 use_math: true
 ---
 
+* Table of Contents
 {:toc}
 
 I've decided to (re)start the research blog to keep a better
