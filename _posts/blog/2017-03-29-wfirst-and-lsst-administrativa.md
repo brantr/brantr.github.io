@@ -20,7 +20,10 @@ We also need to submit the March report.
 
 ## LSST Administrativa
 
-Apparently not all emails on our LSST email list were carried over. The LSST Corporation
+Apparently not all emails on our LSST email list were carried over. Followed up with Lucianne
+about Matt Jarvis.
+
+The LSST Corporation
 site now contains a list of approved international partners:
 
 [LSST International PI List (Password Protected)](https://www.lsstcorporation.org/node/145)
