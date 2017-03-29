@@ -24,6 +24,6 @@ WFC3 imaging in the COSMOS field. I offered to create a
 figure comparing the sizes of the HUDF, CANDELS, and the
 proposed HST-JEWELS fields.
 
-![JEWELS AREA](images/jewels_area.png)
+![JEWELS AREA]({{ site.url }}/images/jewels_area.png)
 
 
