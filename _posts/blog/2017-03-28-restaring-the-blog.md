@@ -8,6 +8,11 @@ I've decided to (re)start the research blog to keep a better
 record of everything I've been up to. Most of these entries
 will be in bulleted form for convenience.
 
+* Continued recovery
+
+I'm still recovering from surgery on March 24. Progress
+has been correspondingly slow.
+
 * JWST NIRCam/NIRSpec GTO proposal
 
 The JWST NIRCam and NIRSpec GTO teams are submitting a 
@@ -26,4 +31,42 @@ proposed HST-JEWELS fields.
 
 ![JEWELS AREA]({{ site.url }}/images/jewels_area.png)
 
+The figure was created by smoothing a dark matter density
+field at $z\sim7$, and then colorizing the density
+field based on the smoothed overdensity.  The scripts for
+producing this figure sit on gray:~/Desktop/hst_cycle_25/capak/.
+
+* WFIRST
+
+The WFIRST Annual Report for the EXPO team was submitted to 
+Jeff Kruk and Dominic Benford. The annual report is available
+at
+
+[WFIRST EXPO Annual Report](https://drive.google.com/open?id=0B3IF6fs3vx_6SEtIZWplVGJqM1E)
+
+The year 2 work plan and monthly report are due in three days.
+
+We are additionally trying to schedule a telecon to frame the
+big picture for SSR. The WFIRST DRM telecon was delayed until
+next Tuesday. The WFIRST Simulation WG telecon may be scheduled
+for the week of April 17, when I am at Evan's thesis defense.
+
+* Computing
+
+Registered for the DGX cloud computing updates.
+
+Also, discovered that on a node without an xserver, one
+can use matplotlib by
+
+{% highlight python %}
+import matplotlib as mpl
+mpl.use('Agg')
+{% endhighlight %}
+
+
+* Administrativa
+
+Wrote announcement for the prelim exam revision, which drops the
+elective component.  Enrico forwarded it to the department. Revised
+grades for Astro 5.
 
