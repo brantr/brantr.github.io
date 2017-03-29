@@ -55,17 +55,32 @@ big picture for SSR. The WFIRST DRM telecon was delayed until
 next Tuesday. The WFIRST Simulation WG telecon may be scheduled
 for the week of April 17, when I am at Evan's thesis defense.
 
+## Disk initial conditions
+
+Evan and I had some correspondence about the disk initial conditions
+in Cholla. The cold isothermal initial conditions likely were
+not resolving the pressure scale length, leading to a vertical
+collapse. With a hotter disk temperature, the disk expands radially.
+This issue identified a problem with the radial acceleration balance
+in the ICs generator, which Evan will work to address.  More information
+on the disk ICs can be found here:
+
+[3D Disk ICs](http://evaneschneider.github.io/site/2017/Milky-Way-3D/)
+[Hydrostatic Balance Issues](http://evaneschneider.github.io/site/2017/Hydrostatic-Blues/)
+
 ## Computing
 
-Registered for the DGX cloud computing updates.
+* Registered for the DGX cloud computing updates.
 
-Also, discovered that on a node without an xserver, one
+* Also, discovered that on a node without an xserver, one
 can use matplotlib by
 
 {% highlight python %}
 import matplotlib as mpl
 mpl.use('Agg')
 {% endhighlight %}
+
+* GTC Talk is on May 9th.
 
 
 ## Administrativa
