@@ -2,10 +2,11 @@
 layout: page
 title: About Brant Robertson
 modified: 2017-03-07
-image:
-  feature: banner.jpg
-  credit: Brant Robertson
-  creditlink: http://brantr.github.io
+%image:
+% feature: banner.jpg
+% feature: turbulence_small.jpg
+% credit: Brant Robertson
+% creditlink: http://brantr.github.io
 ---
 
 Brant Robertson is an Associate Professor in the <a href="http://astro.ucsc.edu">Department of Astronomy and Astrophysics</a> at the <a href="http://www.ucsc.edu">University of California, Santa Cruz</a>. His research interests include theoretical topics related to galaxy formation, dark matter, hydrodynamics, and numerical simulation methodologies. Please have a look at his <a href="https://brantr.github.io/cv">curriculum vita</a> and the <a href="https://robertson.sites.ucsc.edu/publications/">publication list from his group</a>.

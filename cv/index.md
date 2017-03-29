@@ -3,10 +3,10 @@ layout: page
 title: curriculum vita
 excerpt: "CV for Brant Robertson"
 modified: 2017-02-28T01:24:00
-image:
-  feature: banner.jpg
-  credit: Brant Robertson
-  creditlink: http://brantr.github.io
+#image:
+#  feature: banner.jpg
+#  credit: Brant Robertson
+#  creditlink: http://brantr.github.io
 ---
 
 
