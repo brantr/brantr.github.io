@@ -1,8 +1,8 @@
 ---
 layout: post
 categories: blog
-title: Title
-use_math: WFIRST EXPO March Telecon 03/29/2017
+title: WFIRST EXPO March Telecon 03/29/2017
+use_math: true
 ---
 
 * Table of Contents
