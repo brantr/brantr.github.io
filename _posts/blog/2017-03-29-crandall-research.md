@@ -29,6 +29,27 @@ be correct:
  
 ![Pixel Registration]({{ site.url }}/images/pixel_registration_03292017.png)
 
+I reviewed what Sara did and noticed that she assumed
+RA and Dec are aligned with the pixel values:
+
+{% highlight python %}
+x_test = (0,0,nx-1,nx-1)
+y_test = (0,ny-1,0,ny-1)
+ra_test, dec_test = world(fname_img, x_test, y_test)
+print ra_test, dec_test
+{% endhighlight %}
+
+Which gives
+
+{% highlight python %}
+[ 53.10148765  53.10187856  53.1288215   53.12920629] [-27.8135469  -27.7892198  -27.81388789 -27.78956071]
+{% endhighlight %}
+
+This means the x and y pixels are not aligned with RA and Dec. Using world min and max determined from the pixel extent will lead to a distortion.
+
+The corresponding notebook is here:
+
+[JWST Source Registration Test Jupyter Notebook]({{ site.url }}/notebooks/jwst_mock_image_source_registration_03292017.ipynb)
 
 
 ## JWST PSF Aperture Corrections
