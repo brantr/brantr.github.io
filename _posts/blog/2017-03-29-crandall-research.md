@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: blog
-title: Crandall Research 03/29/2017
+title: Crandall Research
 use_math: true
 ---
 
