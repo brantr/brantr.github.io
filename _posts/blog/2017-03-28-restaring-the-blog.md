@@ -2,18 +2,19 @@
 layout: post
 categories: blog
 title: Restarting the research blog.
+use_math: true
 ---
 
 I've decided to (re)start the research blog to keep a better
 record of everything I've been up to. Most of these entries
 will be in bulleted form for convenience.
 
-* Continued recovery
+## Continued recovery
 
 I'm still recovering from surgery on March 24. Progress
 has been correspondingly slow.
 
-* JWST NIRCam/NIRSpec GTO proposal
+## JWST NIRCam/NIRSpec GTO proposal
 
 The JWST NIRCam and NIRSpec GTO teams are submitting a 
 joint proposal to execute a ~800h program in the 
@@ -22,7 +23,7 @@ CANDELS regions of GOODS-N and GOODS-S. The team met at
 last few components to the proposal, including the
 justification of parallel NIRCam/NIRSpec observations.
 
-* JEWELS HST Proposal (PI Capak)
+## JEWELS HST Proposal (PI Capak)
 
 I agreed to help with Peter Capak's HST proposal for
 WFC3 imaging in the COSMOS field. I offered to create a
@@ -32,11 +33,11 @@ proposed HST-JEWELS fields.
 ![JEWELS AREA]({{ site.url }}/images/jewels_area.png)
 
 The figure was created by smoothing a dark matter density
-field at $z\sim7$, and then colorizing the density
+field at $z\sim7$ and then colorizing the density
 field based on the smoothed overdensity.  The scripts for
 producing this figure sit on gray:~/Desktop/hst_cycle_25/capak/.
 
-* WFIRST
+## WFIRST
 
 The WFIRST Annual Report for the EXPO team was submitted to 
 Jeff Kruk and Dominic Benford. The annual report is available
@@ -51,7 +52,7 @@ big picture for SSR. The WFIRST DRM telecon was delayed until
 next Tuesday. The WFIRST Simulation WG telecon may be scheduled
 for the week of April 17, when I am at Evan's thesis defense.
 
-* Computing
+## Computing
 
 Registered for the DGX cloud computing updates.
 
@@ -64,7 +65,7 @@ mpl.use('Agg')
 {% endhighlight %}
 
 
-* Administrativa
+## Administrativa
 
 Wrote announcement for the prelim exam revision, which drops the
 elective component.  Enrico forwarded it to the department. Revised
