@@ -29,6 +29,12 @@ skewer through the simulation volume, oriented along the
 principal axes defined by diagonalizing the moment of
 inertia tensor.  As before, I fit a simple exponential profile.  I then use this fitted exponential profile to define a new range overwhich I perform a re-fit.  I repeat this for the 100 most dense shocks.
 
-The following figures shows the results. The solid black line is an exponential. The light gray lines are the individual shock profiles, rescaled by the fitted exponential scale length and maximum. The blue solid line is the median of the gray curves at each radius, and the dashed blue lines show the 16% and 84% percentiles of the distribution in the shock profiles at each radius.
+The following figures shows the results. The solid black line is an exponential. The light gray lines are the individual shock profiles, rescaled by the fitted exponential scale length and maximum. The blue solid line is the median of the gray curves at each radius, and the dashed blue lines show the 16% and 84% percentiles of the distribution in the shock profiles at each radius. Here I plot the 100 most dense shocks.
 
 ![Exponential Profiles]({{ site.url }}/images/exponential_profiles_03302017.png)
+
+## Exponential Profiles for All Shocks
+
+The above figure only shows the 100 most dense shocks.  I have recomputed this for all shocks with peak densities $$ \rho > 25 \bar{\rho} $$.
+
+![Exponential Profiles All Shocks]({{ site.url }}/images/exponential_profiles_all_03302017.png)
