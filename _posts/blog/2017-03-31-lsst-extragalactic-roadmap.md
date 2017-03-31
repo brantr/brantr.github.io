@@ -30,6 +30,7 @@ Anyone with the link can edit the document, but only those who sign in can save 
   * Click History & Revisions in the tool bar.  
   * Click ``restore`` on the most recent revision.  
   * Click ``Restore Without Saving``.  
+
 4) Make edits.  
 5) Save a revision.  
   * Click History & Revisions in the tool bar.  
