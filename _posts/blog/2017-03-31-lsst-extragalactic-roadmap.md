@@ -24,17 +24,17 @@ If you are interested in contributing, please sign up for a free Overleaf accoun
 Anyone with the link can edit the document, but only those who sign in can save a revision as a version and revert to a previous version.  Accordingly, the workflow should be
 
 0) Make an Overleaf account [here](https://www.overleaf.com/signup/).
-1) Open the link to the Roadmap.
-2) Sign into Overleaf. 
-3) [Optional] Revert to the last saved revision.
-  * Click History & Revisions in the tool bar
-  * Click ``restore`` on the most recent revision.
-  * Click ``Restore Without Saving``.
-4) Make edits.
-5) Save a revision
-  * Click History & Revisions in the tool bar
-  * Click the ``label current version'' field.
-  * Add a label. Click the ``Add Label`` button.
+1) Open the link to the Roadmap.  
+2) Sign into Overleaf.   
+3) [Optional] Revert to the last saved revision.  
+  * Click History & Revisions in the tool bar.  
+  * Click ``restore`` on the most recent revision.  
+  * Click ``Restore Without Saving``.  
+4) Make edits.  
+5) Save a revision.  
+  * Click History & Revisions in the tool bar.  
+  * Click the ``label current version'' field.  
+  * Add a label. Click the ``Add Label`` button.  
 
 If you make edits without signing in, those edits will likely be lost since we will often revert to the last revision.
 
