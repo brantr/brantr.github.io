@@ -20,14 +20,14 @@ iterate the density profile such that the pressure gradient balances the
 vertical force from the gravitational potential.
 
 Assuming hydrostatic equilibrium, we have  
-$$$
+$$
 \nabla P = \nabla\left(K \rho^\gamma\right) = \gamma K \rho^{(\gamma-1)} \frac{d\rho}{dz} = - \rho g_z
-$$$
+$$
 
 We can then set the change in density between cells to equal
-$$$
+$$
 \Delta \rho = - \frac{\rho^{(2-\gamma)}g_z\Delta z}{\gamma K}
-$$$
+$$
 
 We can then check whether density integrates to the surface density,
 and then adjust according.
