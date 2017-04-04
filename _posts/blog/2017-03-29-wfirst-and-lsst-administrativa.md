@@ -41,11 +41,3 @@ Also, fun to see that I made the splash page border for LSST Corporation:
 [LSST Corporation](https://www.lsstcorporation.org)
 
 
-%include image
-% ![JEWELS AREA]({{ site.url }}/images/jewels_area.png)
-
-% syntax highlighting
-%{% highlight python %}
-%import matplotlib as mpl
-%mpl.use('Agg')
-%{% endhighlight %}
