@@ -14,7 +14,7 @@ use_math: true
 <! syntax highlighting >
 {% highlight html%}
 <div>
-<video controls width=500>
+<video controls preload width=500>
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
 </div>
@@ -24,7 +24,7 @@ use_math: true
 
 
 <div>
-<video controls width=500>
+<video controls preload width=500>
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
 </div>
