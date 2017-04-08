@@ -23,8 +23,8 @@ use_math: true
 ## Movie
 
 
-<div>
+<!div>
 <video controls preload width=500>
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
-</div>
+<!/div>
