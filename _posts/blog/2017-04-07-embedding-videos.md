@@ -11,7 +11,6 @@ use_math: true
 
 ## Example embedding of a quicktime movie
 
-<! syntax highlighting >
 {% highlight html%}
 <div>
 <video controls preload width=500>
@@ -23,8 +22,8 @@ use_math: true
 ## Movie
 
 
-<!div>
 <video controls preload width=500>
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
-<!/div>
+
+![disk.mov]({{ site.url }}/movies/disk.mov)
