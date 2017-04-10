@@ -29,5 +29,5 @@ use_math: true
 
 ## Try iframe
 
-<iframe width=500 src="{{ site.url }}/movies/disk.mov"></iframe
+<iframe width=500 src="{{ site.url }}/movies/disk.mov"></iframe>
 
