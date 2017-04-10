@@ -33,4 +33,4 @@ use_math: true
 
 ## Try include.
 
-{% include {{site.url}}/html/disk_04092017.html %}
+{% include disk_04092017.html %}
