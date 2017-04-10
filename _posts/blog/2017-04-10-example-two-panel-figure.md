@@ -12,30 +12,66 @@ use_math: true
 ## Two panel figure example in Matplotlib
 
 {% highlight python %}
-    f, axarr = plt.subplots(2,sharex=True)
-    lw = 2
-    tfont = "Times New Roman"
-    axarr[0].plot(t_ppm, d_ppm, color="0.75", linewidth=lw)
-    axarr[0].plot(t_gpi, d_gpi, color="blue", linewidth=lw)
-    axarr[0].set_xlim([-0.04,0.04])
-    axarr[0].set_ylim([1.0e-2,500])
-    axarr[0].set_yscale('log')
-    axarr[0].set_ylabel(r"$\rho/\bar{\rho}$")
-    axarr[0].text(-0.035,100,shock_number,fontname=tfont)
-    axarr[0].text(-0.035,30,shock_time,fontname=tfont)
-    axarr[1].plot(t_ppm, vx_ppm_rot, color="0.75", linewidth=lw)
-    axarr[1].plot(t_ppm, vy_ppm_rot, color="0.75", linewidth=lw,linestyle="--")
-    axarr[1].plot(t_ppm, vz_ppm_rot, color="0.75", linewidth=lw,linestyle=":")
-    axarr[1].plot(t_gpi, vx_gpi_rot, color="blue", linewidth=lw)
-    axarr[1].plot(t_gpi, vy_gpi_rot, color="red", linewidth=lw)
-    axarr[1].plot(t_gpi, vz_gpi_rot, color="green", linewidth=lw)
-    axarr[1].set_xlim([-0.04,0.04])
-    axarr[1].set_ylim([-15,15])
-    axarr[1].set_xlabel(r"$x/L$")
-    axarr[1].set_ylabel(r"$v/c_{s}$")
-    axarr[1].text(-0.035,12,shock_number,fontname=tfont) 
-    axarr[1].text(-0.035,10,shock_time,fontname=tfont) 
-    fpname = "test.png"
-    plt.savefig(filename=fpname,bbox_inches="tight")
-    plt.show()
+lw = 2
+ms = 7
+
+plt.figure(figsize=[7,3.5])
+f, axarr = plt.subplots(1,2)
+lw = 2
+tfont = "Times New Roman"
+
+xx = [1,8192]
+yy = [np.mean(t_fft_128[-3:-1]),np.mean(t_fft_128[-3:-1])]
+axarr[0].plot(xx,yy,linestyle="--",color="0.75",linewidth=2)
+xx = [1,8192]
+yy = [np.mean(t_fft_256[-3:-1]),np.mean(t_fft_256[-3:-1])]
+axarr[0].plot(xx,yy,linestyle="--",color="0.75",linewidth=2)
+axarr[0].plot(n_gpu, t_fft_128,color='blue',linewidth=lw,label=r"$N_{FFT} = N_{GPU}\times 128^3$")
+axarr[0].plot(n_gpu, t_fft_128,'.',color='blue',markersize=ms)
+axarr[0].plot(n_gpu, t_fft_256,color='red',linewidth=lw,label=r"$N_{FFT} = N_{GPU}\times 256^3$")
+axarr[0].plot(n_gpu, t_fft_256,'.',color='red',markersize=ms)
+axarr[0].set_xlim([4,4096])
+axarr[0].set_ylim([1.0e-1,20.0])
+axarr[0].set_yscale('log')
+axarr[0].set_xscale('log')
+axarr[0].set_ylabel(r"$Time\,[\mathrm{seconds}]$")
+axarr[0].set_xlabel(r"$N_{GPU}\,[\mathrm{Titan}]$")
+axarr[0].text(60,0.5,r'$\mathrm{FFT}\,\mathrm{Only}$')
+axarr[0].legend(loc=4,frameon=False,fontsize=10)
+axarr[0].set_aspect(1.3)
+
+xx = [1,8192]
+yy = [np.mean(t_cholla_hydro_grav[-3:-1]),np.mean(t_cholla_hydro_grav[-3:-1])]
+axarr[1].plot(xx,yy,linestyle="--",color="0.75",linewidth=2)
+xx = [1,8192]
+yy = [np.mean(t_cholla_hydro[-3:-1]),np.mean(t_cholla_hydro[-3:-1])]
+axarr[1].plot(xx,yy,linestyle="--",color="0.75",linewidth=2)
+axarr[1].plot(n_gpu, t_cholla_hydro,color='purple',linewidth=lw,label=r"$\mathrm{Hydro}\,\mathrm{Only}$")
+axarr[1].plot(n_gpu, t_cholla_hydro,'.',color='purple',markersize=ms)
+axarr[1].plot(n_gpu, t_cholla_hydro_grav,color='green',linewidth=lw,label=r"$\mathrm{Hydro}\,+\,\mathrm{Gravity}$")
+axarr[1].plot(n_gpu, t_cholla_hydro_grav,'.',color='green',markersize=ms)
+axarr[1].set_xlim([4,4096])
+axarr[1].set_ylim([1.0e-1,5.0])
+axarr[1].set_yscale('log')
+axarr[1].set_xscale('log')
+axarr[1].set_ylabel(r"$Time\,[\mathrm{seconds}]$")
+axarr[1].set_xlabel(r"$N_{GPU}\,[\mathrm{Titan}]$")
+axarr[1].set_aspect(1.75)
+axarr[1].text(60,0.33,r'$128^3\mathrm{Cells}\,\mathrm{per}\,\mathrm{GPU}$')
+axarr[1].legend(loc=4,frameon=False,fontsize=10)
+
+for ax in axarr.flatten():
+    labels = ax.get_xticklabels() + ax.get_yticklabels()
+    [label.set_fontname(tfont) for label in labels]
+
+plt.tight_layout() 
+
+fpname = "self-gravity_weak_scaling.png"
+plt.savefig(filename=fpname,bbox_inches="tight")
+plt.show()
 {% endhighlight %}
+
+
+## Result
+
+![self-gravity_weak_scaling.png]({{site.url}}/images.self-gravity_weak_scaling.png)
