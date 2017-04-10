@@ -21,11 +21,11 @@ use_math: true
 
 ## Movie
 
-<div markdown="0">
+<html>
 <video controls preload width=500 markdown="0">
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
-</div>
+</html>
 
 ## Try iframe
 
