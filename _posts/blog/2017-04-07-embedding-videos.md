@@ -8,6 +8,13 @@ use_math: true
 * Table of Contents
 {:toc}
 
+# Attempts at including video in a github post.
+
+I'd like to include the video tag in a github post.  I know that I can upload an HTML file and connect directly.
+But I would like to include a link directly in a website.
+
+Unfortunately, none of the following seem to work...
+
 
 ## Example embedding of a quicktime movie
 
@@ -34,3 +41,7 @@ use_math: true
 ## Try include.
 
 Doesn't seem to work.
+
+## Try again
+
+{% include 'disk_04092017.html' %}
