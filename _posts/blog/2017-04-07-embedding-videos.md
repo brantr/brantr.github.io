@@ -27,4 +27,3 @@ use_math: true
 </video>
 </div>
 
-{% video {{ site.url }}/movies/disk.mov %}
