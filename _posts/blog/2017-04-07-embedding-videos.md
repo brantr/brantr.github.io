@@ -31,3 +31,6 @@ use_math: true
 
 <iframe width=500 src="{{ site.url }}/movies/disk.mov"></iframe>
 
+## Try include.
+
+{% include {{site.url}}/html/disk_04092017.html %}
