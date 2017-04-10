@@ -21,9 +21,10 @@ use_math: true
 
 ## Movie
 
-
+<div markdown="0">
 <video controls preload width=500 markdown="0">
 <source src="{{ site.url }}/movies/disk.mov" type="video/quicktime">
 </video>
+</div>
 
 ![disk.mov]({{ site.url }}/movies/disk.mov)
