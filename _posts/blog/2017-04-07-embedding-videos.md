@@ -27,4 +27,4 @@ use_math: true
 </video>
 </div>
 
-![disk.mov]({{ site.url }}/movies/disk.mov)
+{% video {{ site.url }}/movies/disk.mov %}
