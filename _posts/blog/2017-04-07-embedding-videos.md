@@ -41,7 +41,3 @@ Unfortunately, none of the following seem to work...
 ## Try include.
 
 Doesn't seem to work.
-
-## Try again
-
-{% include 'disk_04092017.html' %}
