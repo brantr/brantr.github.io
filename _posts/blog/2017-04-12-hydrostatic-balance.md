@@ -71,8 +71,40 @@ $$
 and our density profile becomes
 
 $$
-\rho = \rho_K\left[(\gamma-1)\frac{\Phi(z)-\Phi_0}{c_s^2} + 1\right]^{\frac{1}{\gamma-1}}
+\rho(z) = \rho_K\left[(\gamma-1)\frac{[\Phi(z)-\Phi_0]}{c_s^2} + 1\right]^{\frac{1}{\gamma-1}}
 $$
 
+A numerical integral sets $\rho_K$ by demanding
+$$
+\rho_K = \Sigma/(2\int_0^{\infty}\left[(\gamma-1)\frac{[\Phi(z)-\Phi_0]}{c_s^2} + 1\right]^{\frac{1}{\gamma-1}} dz)
+$$
+
+## Hydrostatic disks with varying surface densities
+
+So we can use the above to set the central density if the surface density is not a function of radius. But the 
+surface density is declining with radius and the potential is varying as the radius increases.
+
+Once we set $$\rho_K$$ at $$z=0$$, $$R=0$$, we are stuck with that equation of state if the disk gas is all 
+on the same adiabat.
+
+Now, reconsider a different place in the disk. The central
+density in the midplane will be lower because of the 
+surface density, but also lower if the potential has changed radially.
+
+Clearly $$\rho(R\ne 0,z=0)\ne\rho_K$$, so the constant
+of integration in determining the density by integrating
+the vertical force is not the same as at $$R=0$$.
+
+Instead we can write  
+$$
+\rho(R,z) = \rho_K\left[(\gamma-1)\frac{[\Phi(z)-\Phi_0]}{c_s^2} + D\right]^{\frac{1}{\gamma-1}}
+$$
+
+Where
+$$
+D = \left(\frac{\rho_0(R)}{\rho_K}\right)^{\gamma-1}
+$$
+
+such that $$\rho(R,z=0) = \rho_0(R)$$.
 
 
