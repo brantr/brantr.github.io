@@ -56,8 +56,8 @@ $$
 \rho = \rho_K\left[(\gamma-1)\frac{\Phi(z)}{c_s^2} + C\right]^{\frac{1}{\gamma-1}}
 $$
 
-If we define the central midplane gas temperature at $z=0$
-to be such that the sound speed is $c_s$, then $\rho(z=0)=\rho_K$. Given the above, we then require
+If we define the central midplane gas temperature at $$z=0$$
+to be such that the sound speed is $$c_s$$, then $$\rho(z=0)=\rho_K$$. Given the above, we then require
 
 $$
 (\gamma-1)\frac{\Phi(z)}{c_s^2} + C = 1;\,z=0
