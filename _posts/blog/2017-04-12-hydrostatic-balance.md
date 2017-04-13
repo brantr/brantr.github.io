@@ -74,7 +74,7 @@ $$
 \rho(z) = \rho_K\left[(\gamma-1)\frac{[\Phi(z)-\Phi_0]}{c_s^2} + 1\right]^{\frac{1}{\gamma-1}}
 $$
 
-A numerical integral sets $\rho_K$ by demanding
+A numerical integral sets $$\rho_K$$ by demanding
 $$
 \rho_K = \Sigma/(2\int_0^{\infty}\left[(\gamma-1)\frac{[\Phi(z)-\Phi_0]}{c_s^2} + 1\right]^{\frac{1}{\gamma-1}} dz)
 $$
