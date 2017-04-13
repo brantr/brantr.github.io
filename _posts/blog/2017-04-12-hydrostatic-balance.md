@@ -107,9 +107,10 @@ $$
 
 such that $$\rho(R,z=0) = \rho_0(R)$$.  The density
 $$\rho_K$$ where the sound speed is $$c_s$$ is a constant, so the surface density constraint must
-be used to set $\rho_0(R)$. This has to be done iteratively, but a first reasonable guess is
+be used to set $$\rho_0(R)$$. This has to be done iteratively, but a first reasonable guess is
 $$
 \rho_0(R) \approx \rho_K \frac{\Sigma(R)}{\Sigma_0}
 $$
 
 Note $$0<D<1$$.
+
