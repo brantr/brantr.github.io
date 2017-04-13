@@ -63,7 +63,7 @@ $$
 (\gamma-1)\frac{\Phi(z)}{c_s^2} + C = 1;\,z=0
 $$
 
-We can arrange this if we define $$\Phi(z=0)=\Phi_0$ and write
+We can arrange this if we define $$\Phi(z=0)=\Phi_0$$ and write
 $$
 C = -(\gamma-1)\frac{\Phi_0}{c_s^2} + 1
 $$
