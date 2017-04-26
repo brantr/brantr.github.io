@@ -5,7 +5,9 @@ excerpt: "An archive of arXiv notes sorted by date."
 search_omit: true
 ---
 
+<center>
 Short notes about arXiv postings relevant to astrophysics.
+</center>
 
 <ul class="post-list">
 {% for post in site.categories.arxiv %} 
