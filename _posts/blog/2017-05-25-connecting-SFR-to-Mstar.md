@@ -89,6 +89,12 @@ This function has units of Mpc$$^{-3}$$ dex$$^{-1}$$.
 
 ## Scatter in stellar mass vs. SFR
 
+If we have some distribution of SFR at fixed
+stellar mass, then to convert SFR to stellar mass we have to do
+another integral:
+$$  
+\frac{dn}{d\log_{10} M_{\star}} = \int_{-\infty}^{\infty} \frac{dn}{d\log_{10}SFR} p(M_{\star}|d\log_{10}SFR) d\log_{10}SFR
+$$  
 
 
 
