@@ -11,7 +11,6 @@ use_math: true
 
 ## Adding a rectangle using matplotlib
 
-% syntax highlighting
 {% highlight python %}
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
