@@ -89,12 +89,29 @@ This function has units of Mpc$$^{-3}$$ dex$$^{-1}$$.
 
 ## Scatter in stellar mass vs. SFR
 
-If we have some distribution of SFR at fixed
-stellar mass, then to convert SFR to stellar mass we have to do
-another integral:
+Imagine we have a population of galaxies that have a distribution
+of star formation rate and stellar mass.  We could then write
+that distribution as 
+$$
+\frac{d^2 n}{d\log_{10}SFR~d\log_{10}M_{\star}}
+$$   
+such that  
+$$
+\frac{dn}{d\log_{10}M_{\star}} = \int_{SFR} \frac{d^2 n}{d\log_{10}SFR~d\log_{10}M_{\star}} d\log_{10} SFR
 $$  
-\frac{dn}{d\log_{10} M_{\star}} = \int_{-\infty}^{\infty} \frac{dn}{d\log_{10}SFR} p(M_{\star}|d\log_{10}SFR) d\log_{10}SFR
+But we can relate the joint distribution of SFR and
+stellar mass $$\frac{d^2 n}{d\log_{10}SFR~d\log_{10}M_{\star}}$$
+to the conditional distribution of stellar mass given
+star formation rate $$p(\log_{10}M_{\star}|\log_{10}SFR)$$
+as  
 $$  
-
+\frac{dn}{d\log_{10} M_{\star}} = \int_{-\infty}^{\infty} \frac{dn}{d\log_{10}SFR} p(d\log_{10}M_{\star}|d\log_{10}SFR) d\log_{10}SFR
+$$  
+Note that $$p(d\log_{10}M_{\star}|d\log_{10}SFR)$$ could be,
+e.g., a gaussian in $$d\log_{10}M_{\star}$$ normalized
+such that   
+$$
+\int_{d\log_{10}M_{\star}}p(d\log_{10}M_{\star}|d\log_{10}SFR) d\log_{10}M_{\star} = 1.
+$$
 
 
