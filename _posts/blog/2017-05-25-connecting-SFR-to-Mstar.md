@@ -38,7 +38,8 @@ $$
 $$  
 assuming that $$\nu$$ corresponds to the monochromatic frequency
 that defines what we mean by "UV". $$A_{SFR,UV}$$ and $$B_{SFR,UV}$$
-are constants.
+are constants. Throughout, I'll implicitly divide by $$M_{\odot}~\mathrm{yr}^{-1}$$ or $$M_{\odot}$$ such that the
+arguments of logarithms are unit free.
 
 We can work in magnitudes rather than luminosity by noting
 that  
