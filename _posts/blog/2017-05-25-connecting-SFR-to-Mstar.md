@@ -45,7 +45,7 @@ that
 $$
 L_{UV} = D_{UV} 10^{-0.4 M_{UV}}
 $$  
-where $D_{UV}$ is some constant. If $$SFR\propto L_{UV}$$ as above,
+where $$D_{UV}$$ is some constant. If $$SFR\propto L_{UV}$$ as above,
 then we just have  
 $$
 \log_{10} SFR = -0.4 M_{UV} + C_{SFR}
@@ -77,14 +77,15 @@ $$
 $$  
 or  
 $$
-\frac{d\log_{10} SFR}{d\log_{10} M_{\star}} = gamma.
+\frac{d\log_{10} SFR}{d\log_{10} M_{\star}} = \gamma.
 $$  
-The units are $[\mathrm{dex}/\mathrm{dex}]$, or no units!
+The units are $$[\mathrm{dex}/\mathrm{dex}]$$, or no units!
 
 We then have the stellar mass function as  
 $$  
 \frac{dn}{d\log_{10} M_{\star}} = \frac{dn}{dM_{UV}} \frac{dM_{UV}}{d\log_{10}SFR} \frac{d\log_{10}SFR}{d\log_{10} M_{\star}}.
 $$  
+This function has units of Mpc$$^{-3}$$ dex$$^{-1}$$.
 
 ## Scatter in stellar mass vs. SFR
 
