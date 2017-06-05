@@ -74,7 +74,7 @@ use_math: true
 * Back propagation
 * Rumelhart, Hinton, Williams, McClelland et al. 1986
 * Werbos (1974)
-* Deep netowrks operation on ~ 1M dimensions
+* Deep networks operate on ~ 1M dimensions
 * optimization is highly non-convex
 * [playground.tensorflow.org](playground.tensorflow.org)
 
@@ -115,39 +115,39 @@ use_math: true
 
 ## advances in neural networks
 * nonlinearities: example of batch normalization
-  -- covariate shifts are problematic in machine learning
-  -- blog.bigml.com
-  -- covariate shifts must be mitigated through domain adaptation
-  -- input and training and test data have different distributions
-  -- how to you maintain -- Ioffe and Szegedy 2015 -- Batch Normalization: reduce internal covariate shifts
-  -- Goodfellow et al. 2013
-  -- normalize the activiations within a mini-batch
-  -- learn the moments as a parameter of the network
-  -- learn the mean and variance of each layer as parameters
-  -- perceptron y = f(BatchNorm(\Sum w_i x_i))
-  -- stabalize hidden layer activations
-  -- CNNs train faster with fewer data samples
-  -- employ faster learning rates and less network regularizations
+  - covariate shifts are problematic in machine learning
+  - blog.bigml.com
+  - covariate shifts must be mitigated through domain adaptation
+  - input and training and test data have different distributions
+  - how to you maintain -- Ioffe and Szegedy 2015 -- Batch Normalization: reduce internal covariate shifts
+  - Goodfellow et al. 2013
+  - normalize the activiations within a mini-batch
+  - learn the moments as a parameter of the network
+  - learn the mean and variance of each layer as parameters
+  - perceptron y = f(BatchNorm(\Sum w_i x_i))
+  - stabalize hidden layer activations
+  - CNNs train faster with fewer data samples
+  - employ faster learning rates and less network regularizations
 
 * understanding: example of gradient propagation
-  -- for training a network -- focused on claculating gradients on parameters
-  -- but how does objectives change based on images 
-  -- weight vs. image space
-  -- which pixels elicit a large activation values within a layer?
-  -- Zeiler and Fergus (@013) -- Visualizing and Understanding Convolutional Networks
-  -- [http://mscoco.org](http://mscoco.org)
-  -- what happens if we distort the image
-  -- what if we used the wrong image
-  -- Mordvintsev Olah and Tyka (2015) -- Inceptionism: Going Deeper into Neural Networks
-  -- What pixels distort and image into the "dog"
-  -- [http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html](http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html)
-  -- A Neural Algorithm of Artistic Style -- Gatys, Ecker, Bethge (2015)
-  -- [https://github.com/kaishengtai/neuralart](https://github.com/kaishengtai/neuralart)
-  -- Goodfellow, Shlens, And Szegedy (2015) -- explaining and harnessing adversarial examples
-  -- Szegedy et al. (2014) -- intriguing properties of neural networks
-  -- add images to see what can fool the network
-  -- robust across trained networks, architectures, and other machine learnings
-  -- network operates in different perceptual space
+  - for training a network -- focused on claculating gradients on parameters
+  - but how does objectives change based on images 
+  - weight vs. image space
+  - which pixels elicit a large activation values within a layer?
+  - Zeiler and Fergus (@013) -- Visualizing and Understanding Convolutional Networks
+  - [http://mscoco.org](http://mscoco.org)
+  - what happens if we distort the image
+  - what if we used the wrong image
+  - Mordvintsev Olah and Tyka (2015) -- Inceptionism: Going Deeper into Neural Networks
+  - What pixels distort and image into the "dog"
+  - [http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html](http://googleresearch.blogspot.com/2015/06/inceptionism-going-deeper-into-neural.html)
+  - A Neural Algorithm of Artistic Style -- Gatys, Ecker, Bethge (2015)
+  - [https://github.com/kaishengtai/neuralart](https://github.com/kaishengtai/neuralart)
+  - Goodfellow, Shlens, And Szegedy (2015) -- explaining and harnessing adversarial examples
+  - Szegedy et al. (2014) -- intriguing properties of neural networks
+  - add images to see what can fool the network
+  - robust across trained networks, architectures, and other machine learnings
+  - network operates in different perceptual space
 
 ## Conclusions
 * [cs231n.github.io/convolutional-networks/](cs231n.github.io/convolutional-networks/) 
