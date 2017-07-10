@@ -22,5 +22,4 @@ for i in range(nx):
     image[i,j] = np.sin(2*np.pi*float(i)/float(nx)) + np.sin(6*np.pi*float(y)/float(ny))
 plt.imshow(image.T,origin="lower")
 {% endhighlight %}
-
-<img src="{{ site.url }}/images/imshow_orientation.png" width=500></img>
+![]({{ site.url }}/images/imshow_orientation.png)
