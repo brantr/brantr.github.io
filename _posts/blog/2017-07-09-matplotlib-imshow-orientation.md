@@ -23,4 +23,4 @@ for i in range(nx):
 plt.imshow(image.T,origin="lower")
 {% endhighlight %}
 
-<img src="{{ site.url }}/images/imshow_orientation.png" width=500>
+<img src="{{ site.url }}/images/imshow_orientation.png" width=500></img>
