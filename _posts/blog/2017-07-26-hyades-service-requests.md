@@ -21,6 +21,7 @@ If you have a service request for Hyades, please fill out a service request form
 	- Follow the prompt to log on using your CruzID and Gold Password.
 	- Under Keyword/Category type "Astrophysics Cluster Support".
 	- Enter a Title and a Description of the issue, including any relevant information that might help resolve the issue.
+	- The requested "Service" is "Research IT Support". The corresponding "System/Application" is the "Astrophysics Cluster".
 
 * *For external collaborators without a CruzID*:
 	- Please click on "Guest" on the right side of the page.
@@ -28,5 +29,6 @@ If you have a service request for Hyades, please fill out a service request form
 	- Enter your name, email address, and phone number.
 	- Under Affiliation, click "Other (Please specify below)".
 	- Under "How can we help you?" type in "Ticket For Astrophysics Cluster Support" along with a description of the issue. A ticket will be logged and more information can be provided as necessary.
+	- The requested "Service" is "Research IT Support". The corresponding "System/Application" is the "Astrophysics Cluster".
 
 Please feel free to note in the ticket that it can be assigned to brant@ucsc.edu.
