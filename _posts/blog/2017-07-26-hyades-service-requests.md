@@ -14,7 +14,7 @@ All Hyades service activities will now be routed through the UCSC Service Reques
 
 If you have a service request for Hyades, please fill out a service request form at:
 
-[itrequest.ucsc.edu](itrequest.ucsc.edu)
+[itrequest.ucsc.edu](http://itrequest.ucsc.edu)
 
 * *For UCSC students, staff, and faculty*:
 	- Please click on "Get Help - Open a Ticket" on the left side of the page.
