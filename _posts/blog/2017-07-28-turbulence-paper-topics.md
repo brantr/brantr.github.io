@@ -9,20 +9,20 @@ use_math: true
 {:toc}
 
 ## Simulation description
-  - basic simulation design
-  - description of driving scheme
-  - tracer particle integration
+  - ~~basic simulation design~~
+  - ~~description of driving scheme~~
+  - ~~tracer particle integration~~
   - simulations of exponential shock evolution
 
 ## Analysis
-  - reinterpolation of the particles using PPM
-  - reinterpolation of the particles using GPI
+  - ~~reinterpolation of the particles using PPM~~
+  - ~~reinterpolation of the particles using GPI~~
   - Description of the group finding method
     * fof cataloging using different density thresholds
     * merging together of groups with overlap
   - Description of the voronoi tesselation methodology
   - Description of the orientation and trajectory interpolation at the peak locations
-  - Description of the tracking method for time-dependent
+  - Description of the tracking method for time-dependent shock evolution
   - Potential calculation
   - Bound group finding and splitting
   - time-dependent profiles of exponential shock simulations
