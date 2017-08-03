@@ -9,7 +9,8 @@ search_omit: true
 Important links.
 </center>
 
-[ArXiv.org](www.arxiv.org)
+[ArXiv.org](https://arxiv.org)
+[ADS](http://adsabs.harvard.edu/abstract_service.html)
 
 <ul class="post-list">
 {% for post in site.categories.links %} 
