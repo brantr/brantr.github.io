@@ -90,6 +90,14 @@ Quoting from Jeffers, Reinders, and Sodani:
 * Use "_mm_malloc()" and _mm_free
 * use "__assume_aligned(a,64)" before a loop
 * Also "#pragma vector aligned"
+* Use after "#pragma omp parallel for"
+
+
+## General Programming Advice
+* Manage Domain Parallelism
+* Increase Thread Parallelism
+* Exploit Data Parallelism
+* Improve Data Locality
 
 
 
