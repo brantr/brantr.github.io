@@ -69,3 +69,29 @@ Quoting from Jeffers, Reinders, and Sodani:
 * Cores share the L2 cache read and write bandwidth
 * AVX-512 registers are 8 DP wide (512 bits)
 * Using two threads per core usually provides maximum performance
+
+## Performance recommendations
+* Use static libraries
+* Put "export LD_PREFER_MAP_32BIT_EXEC=1" in bashrc
+* Use 2M or 1G pages.
+* Avoid SSE instructions.
+* Reference multiple pointers before deferencing the first.
+* Use AVX-512 instructions.
+
+## Vector Operation Costs
+* Simple math, load, and stores have cost 1
+* Gather for 8 or 16 elements have 14 or 20 cost
+* Horizontal reductions have cost 30
+* Division or square roots have cost 15
+* See examples on pages 122-123.
+
+## Data Alignment
+* [Data Alignment to Assist Vectorization](https://software.intel.com/en-us/articles/data-alignment-to-assist-vectorization)
+* Use "_mm_malloc()" and _mm_free
+* use "__assume_aligned(a,64)" before a loop
+* Also "#pragma vector aligned"
+
+
+
+
+
