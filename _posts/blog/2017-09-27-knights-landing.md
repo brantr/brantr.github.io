@@ -113,6 +113,7 @@ Quoting from Jeffers, Reinders, and Sodani:
 * Re-use data in cache if possible.
 * If data is being written out and will not be re-used, use streaming stores to prevent evictions from cache.  Data must occupy linear memory without gaps.
 * Avoid manual loop unrolling.
+* SIMD directives on page 193
 
 ## Prefetching
 * Compiler prefetching via "-opt-prefetch=n". Automatically set to n=3 with -Ox.
@@ -155,5 +156,43 @@ void vectorize( float *restrict a, float *restrict b, float *c, float *d, int n)
     a[i] = c[i] * d[i];
     b[i] = a[i] + c[i] - d[i];
   }
+}
+{% endhighlight %}
+
+## Vector Directives: ivdep
+* The following would not vectorize without ivdep since the value of k is not known and could be k<0.
+{% highlight c %}
+void ignore_vec_dep(int *a, int k, int c, int m)
+{
+  #pragma ivdep
+  for(int i=0;i<m;i++)
+  {
+    a[i] = a[i+k]*c;
+  }
+}
+{% endhighlight %}
+
+## Vectorization of Random Numbers
+* drand48, erand48, lrand48, nrand48, mrand48, and jrand48 can be vectorized.
+* Example:
+
+{% highlight c %}
+#include <stdlib.h>
+#include <stdio.h>
+#define ASIZE 1024
+int main(int argc, char **argv)
+{
+  int i;
+  double rand_number[ASIZE] = {0};
+  unsigned short seed[3] = {155,0,155};
+  // Initialize Seed Value for Random Number
+  seed48(&seed[0]);
+  for(i=0;i<ASIZE;i++)
+  {
+    rand_number[i] = drand48();
+  }
+  //Print Sampel Array Element
+  printf("%f\n", rand_number[ASIZE-1]);
+  return 0;
 }
 {% endhighlight %}
