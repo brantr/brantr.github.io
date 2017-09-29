@@ -92,6 +92,35 @@ Quoting from Jeffers, Reinders, and Sodani:
 * Also "#pragma vector aligned"
 * Use after "#pragma omp parallel for"
 * Data alignment information on page 181
+* Example using assume aligned directive:
+{% highlight c %}
+void myfunc(double p[])
+{
+  __assume_aligned(p,64);
+  for(int i=0;i<n;i++)
+  {
+    p[i]++;
+  }
+}
+void myfunc2(double *p2, double *p3, double *p4, int n)
+{
+  for(int j=0;j<n;j+=8)
+  {
+    __assume_aligned(p2,64);
+    __assume_aligned(p3,64);
+    __assume_aligned(p4,64);
+    p2[j:8] = p3[j:8]*p4[j:8];
+  }
+}
+{% endhighlight %}
+* Example where all data is aligned in loop:
+{% highlight c %}
+#pragma vector aligned
+for(i=0;i<n;i++)
+  A[i] = B[i]*C[i]+D[i];
+#pragma vector aligned
+A[0:n] = B[0:n]*C[0:n]+D[0:n];
+{% endhighlight %}
 
 ## General Programming Advice
 * Manage Domain Parallelism
@@ -114,6 +143,7 @@ Quoting from Jeffers, Reinders, and Sodani:
 * If data is being written out and will not be re-used, use streaming stores to prevent evictions from cache.  Data must occupy linear memory without gaps.
 * Avoid manual loop unrolling.
 * SIMD directives on page 193
+* Vectorization may not produce numerically identical results to scalar operations, especially in reductions.  Use "-fp-model precise" to prevent vectorization of reductions (and other things).
 
 ## Prefetching
 * Compiler prefetching via "-opt-prefetch=n". Automatically set to n=3 with -Ox.
@@ -196,3 +226,14 @@ int main(int argc, char **argv)
   return 0;
 }
 {% endhighlight %}
+
+# Optimization and Profiling
+* Use "-xCOMMON-AVX512"
+* For profiling, use "-g"
+* Survey usage:
+- Set environment variable: "source /opt/intel/advisor_xe_2016/advixe-vars.sh"
+- Collect Survey data: "advixe-cl --collect-=survey --projectdir=<project_dir> --<target_application>"
+- Launch the advisor gui: "advixe-gui <project_directory>"
+- Output answer data is usually e000 or something similar.
+* Information on Vectorization Advisor on page 217
+
