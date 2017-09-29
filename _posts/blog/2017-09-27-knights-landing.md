@@ -87,11 +87,11 @@ Quoting from Jeffers, Reinders, and Sodani:
 
 ## Data Alignment
 * [Data Alignment to Assist Vectorization](https://software.intel.com/en-us/articles/data-alignment-to-assist-vectorization)
-* Use "_mm_malloc()" and _mm_free
-* use "__assume_aligned(a,64)" before a loop
+* Use "_mm_malloc()" and "_mm_free"
+* use "__assume_aligned(a,64)" before a loop__
 * Also "#pragma vector aligned"
 * Use after "#pragma omp parallel for"
-
+* Data alignment information on page 181
 
 ## General Programming Advice
 * Manage Domain Parallelism
@@ -99,7 +99,61 @@ Quoting from Jeffers, Reinders, and Sodani:
 * Exploit Data Parallelism
 * Improve Data Locality
 
+## Environmental Variables
+* KMP_AFFINITY=SCATTER to distribute threads across cores
+* KMP_STACKSIZE=16MB instead of standard 12MB
+* KMP_BLOCKTIME=Infinite to prevent threads from sleeping
+* There are other OMP variables for nested threads, for future reference.
 
+## Vectorization
+* Autovectorization using -O2 or -O3
+* Compiler optimization report add "-qopt-report -qopt-report-phase=loop,vec"
+* Avoid gather/scatter, instead align and pack memory
+* Fetch from cache, not memory.  Prefetch to L2, then prefetch from L2 to L1.  Look at "mm_prefetch".
+* Re-use data in cache if possible.
+* If data is being written out and will not be re-used, use streaming stores to prevent evictions from cache.  Data must occupy linear memory without gaps.
+* Avoid manual loop unrolling.
 
+## Prefetching
+* Compiler prefetching via "-opt-prefetch=n". Automatically set to n=3 with -Ox.
+* Pragma hint "#pragma prefetch var:hint:distance". hint=0 (L1 and L2) or hint=1 (L2)
+* "__mm_prefetch(char const *address, int hint)"*__ Loads one cache line of data at address.
+* Too many prefetches are problmeatic.  Can disable compiler prefetching with "-opt-prefetch=0"
+* Disable compiler preftech with "#pragma noprefetch" within loop.
+* Example code on page 184
 
+## Streaming Stores
+* Compiler options "-opt-streaming-stores keyword" auto always never, auto default.
+* Streaming stores from a loop can only be determined at runtime, so variable loop iterations need "#pragma vector nontemporal"
 
+## Loop Vectorization Requirements
+* Inner loop in a loop nest.
+* Straight-line code, no jumps or branches, but can mask with if statement.
+* Must be countable, with no data-dependent exit conditions.
+* No backward loop-carried dependencies. a[i] must be computed before a[i-1] is used.
+* No special operators, functions, or subroutines called.
+* Intrinsic math functions such as sin(), log(), and fmax() are OK.
+* Following math functions OK: sin, cos, tan, asin, acos, atan, log, log2, log10, exp, exp2, sinh, cosh, tanh, asinh, acosh, atanh, erf, erfc, erfinv, sqrt, cbrt, trunk, round, ceil, floor, fabs, fmin, fmax, pow, and atan2.
+* Reductions and vector assignments OK.
+* Avoid mixed data types.
+* Use contiguous memory locations, with unit stride.
+* Use ivdep to advise that there are no loop-carried dependencies.
+* Use vector always pragma to force vectorization.
+* Check vectorization report.
+
+## Compiler options for Vectorization
+* "-ansi-alias"
+* "-restrict" Allows restrict to be used as a keyword in C.
+
+{% highlight c %}
+void vectorize( float *restrict a, float *restrict b, float *c, float *d, int n)
+{
+  /* Ensure that compiler knows a and b do not overlap*/
+  int i;
+  for(i=0; i<n; i++)
+  {
+    a[i] = c[i] * d[i];
+    b[i] = a[i] + c[i] - d[i];
+  }
+}
+{% endhighlight %}
