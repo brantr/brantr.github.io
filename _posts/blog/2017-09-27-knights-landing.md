@@ -300,3 +300,7 @@ int main(int argc, char *argv[])
 {% endhighlight %}
 
 Note the casting of the simd 512 bit data types when passing to a function.
+
+## Intel Intrinsics Guide
+
+Here is the (Intel Intrinsics Guide)[https://software.intel.com/sites/landingpage/IntrinsicsGuide/].
