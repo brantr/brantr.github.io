@@ -304,3 +304,14 @@ Note the casting of the simd 512 bit data types when passing to a function.
 ## Intel Intrinsics Guide
 
 Here is the [Intel Intrinsics Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/).
+
+## Intel Math Kernel Library
+
+[MKL Website](https://software.intel.com/en-us/mkl)
+
+## Intel Data Analytics Acceleration Library
+
+[DAAL Website](https://software.intel.com/en-us/intel-daal)
+
+## Intel Integrated Performance Primitives Library
+[IPP Website](https://software.intel.com/en-us/intel-ipp)
