@@ -53,6 +53,8 @@ can be input into `tf.layers.dense()`.
 
 ** If evaluating, just compute the accuracy from `tf.metrics.accuracy` and return the estimator.
 
+** At this point, the model is defined.  We then have to define a `main()` function to run the model on the data.
+
 [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
 [How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
 [Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
