@@ -20,6 +20,8 @@ use_math: true
 
 This tutorial covers [MNIST](http://yann.lecun.com/exdb/mnist) and shows how to build a CNN-based classification model. It introduces [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) activation functions and [pooling layers](https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layer). The tutorial also introduces [softmax](https://en.wikipedia.org/wiki/Softmax_function) activation functions. It references the [Stanford CS23](https://cs231n.github.io/convolutional-networks) course on convolutional neural networks. It introduces a [loss function](https://en.wikipedia.org/wiki/Loss_function) and the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) function. It also introduces [one-hot encoding](https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science) and [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent).
 
+** First we define the model function, which returns an estimator.  It takes as arguments the data, labels, and a mode (e.g., train, eval, predict).
+
 ** `layers` module expects tensors of size `[batch_size, image_width, image_height, channels]`. `batch_size` is number of images for training and `channels` is, e.g., 3 for RGB or 1 for BW. We can use `tf.reshape()` to make this tensor.
 
 ** `conv2d()` module receives the input layer, and then the output size depends on padding (e.g., `padding=same` zero pads to maintain the image size). The output `channels` of `conv2d()` will be the number of `filters` times the number of input `channels`, times the size of the images. An activation function has to be indicated (e.g., `tf.nn.relu`).
@@ -29,7 +31,7 @@ This tutorial covers [MNIST](http://yann.lecun.com/exdb/mnist) and shows how to 
 ** `tf.reshape()` can be used to take the output from `conv2d()` and `max_pooling2d()` and make it `batch_size x ` a 1D array. That
 can be input into `tf.layers.dense()`.
 
-** `tf.layers.dense()` takes a flattened input tensor, and you specify the number of neurons with `units`. Note that `untis` does not need to equal the number of array elements in the flattend input tensor.
+** `tf.layers.dense()` takes a flattened input tensor, and you specify the number of neurons with `units`. Note that `units` does not need to equal the number of array elements in the flattend input tensor. An activation function must be specified (e.g., `tf.nn.relu`).
 
 ** `tf.layers.dropout()` applies dropout regularization, with `rate` indicating the percentage of neuron outputs that are randomly dropped.
 
@@ -42,6 +44,14 @@ can be input into `tf.layers.dense()`.
 ** Predicted class can be found using `tf.argmax()`.
 
 ** The probabilities can be determined using `tf.nn.softmax()`.
+
+** These predictions are then zipped and returned if in prediction mode.
+
+** Otherwise, a loss function is computed -- instead of `one_hot` tutorial now uses `sparse_softmax_cross_entropy` directly on input labels and output logits.
+
+** If training, then define a `tf.train.GradientDescentOptimizer` with an input learning rate (e.g., 0.001). Pass the loss function output to the optimizer. Then return the estimator.
+
+** If evaluating, just compute the accuracy from `tf.metrics.accuracy` and return the estimator.
 
 [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
 [How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
