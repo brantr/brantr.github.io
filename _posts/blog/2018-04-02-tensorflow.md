@@ -86,8 +86,11 @@ python label_image.py \
 --image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
 ```
 
-[Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
-[Linear Rectifier]()  
-[Sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function)  
+## [Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
 
-[Tensorflow w/ CUDA Info](https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/tensorflow/)
+This tutorial teaches you to use [Inception-V3](https://arxiv.org/abs/1512.00567) to perform image classification on [ImageNet](http://image-net.org/). The example `classify_image.py` downloads a pre-trained Inception-V3 and then classifies an image of a panda.
+
+## Other Information
+** [Linear Rectifier](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)).  
+** [Sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function)  
+** [Tensorflow w/ CUDA Info](https://www.nvidia.com/en-us/data-center/gpu-accelerated-applications/tensorflow/)
