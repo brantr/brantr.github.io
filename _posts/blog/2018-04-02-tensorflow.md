@@ -55,6 +55,12 @@ can be input into `tf.layers.dense()`.
 
 ** At this point, the model is defined.  We then have to define a `main()` function to run the model on the data.
 
+** In `main()`, we need to define the dataset.  We select the `mnist.train.images` to get the training dataset, and load the labels as an array.  We then define a test or evaluation dataset, which is `mnist.test.images` and its corresponding labels as an array.
+
+** The `tf.estimator.Estimator()` function is given the `cnn_model_fn` and a model output directory.  The classifier is then trained via `mnist_classifier.train()` and then evaluated using `mnist_classifier.evaluate()`.
+
+** There is another 
+
 [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
 [How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
 [Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
