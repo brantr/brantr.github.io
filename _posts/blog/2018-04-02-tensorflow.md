@@ -16,7 +16,7 @@ use_math: true
 
 [Tensorflow Tutorials](https://www.tensorflow.org/tutorials)  
 
-* [A Guide to TF Layers: Building a Convolutional Neural Network](https://www.tensorflow.org/tutorials/layers)  
+### [A Guide to TF Layers: Building a Convolutional Neural Network](https://www.tensorflow.org/tutorials/layers)  
 
 This tutorial covers [MNIST](http://yann.lecun.com/exdb/mnist) and shows how to build a CNN-based classification model. It introduces [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) activation functions and [pooling layers](https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layer). The tutorial also introduces [softmax](https://en.wikipedia.org/wiki/Softmax_function) activation functions. It references the [Stanford CS23](https://cs231n.github.io/convolutional-networks) course on convolutional neural networks. It introduces a [loss function](https://en.wikipedia.org/wiki/Loss_function) and the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) function. It also introduces [one-hot encoding](https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science) and [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent).
 
@@ -59,9 +59,16 @@ can be input into `tf.layers.dense()`.
 
 ** The `tf.estimator.Estimator()` function is given the `cnn_model_fn` and a model output directory.  The classifier is then trained via `mnist_classifier.train()` and then evaluated using `mnist_classifier.evaluate()`.
 
-** There is another 
+### [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
 
-[Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
+** This tutorial covers classification of the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) data set.  The model is based on [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf).
+
+** The CIFAR-10 data is based on fixed length binary information, and there is a `tf.FixedLengthRecordReader`.
+
+** [Image distortion and augmentation](https://www.tensorflow.org/api_guides/python/image) is applied.
+
+** The model adds [local response normalization](https://www.tensorflow.org/api_docs/python/tf/nn/local_response_normalization) as a step. This normalizes individual images by taking a weighted, squared sum of nearby images in the array.
+
 [How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
 [Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
 [Linear Rectifier]()  
