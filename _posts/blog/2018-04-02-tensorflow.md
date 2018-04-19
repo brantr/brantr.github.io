@@ -16,7 +16,7 @@ use_math: true
 
 [Tensorflow Tutorials](https://www.tensorflow.org/tutorials)  
 
-### [A Guide to TF Layers: Building a Convolutional Neural Network](https://www.tensorflow.org/tutorials/layers)  
+## [A Guide to TF Layers: Building a Convolutional Neural Network](https://www.tensorflow.org/tutorials/layers)  
 
 This tutorial covers [MNIST](http://yann.lecun.com/exdb/mnist) and shows how to build a CNN-based classification model. It introduces [ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) activation functions and [pooling layers](https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layer). The tutorial also introduces [softmax](https://en.wikipedia.org/wiki/Softmax_function) activation functions. It references the [Stanford CS23](https://cs231n.github.io/convolutional-networks) course on convolutional neural networks. It introduces a [loss function](https://en.wikipedia.org/wiki/Loss_function) and the [cross entropy](https://en.wikipedia.org/wiki/Cross_entropy) function. It also introduces [one-hot encoding](https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science) and [stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent).
 
@@ -59,7 +59,7 @@ can be input into `tf.layers.dense()`.
 
 ** The `tf.estimator.Estimator()` function is given the `cnn_model_fn` and a model output directory.  The classifier is then trained via `mnist_classifier.train()` and then evaluated using `mnist_classifier.evaluate()`.
 
-### [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
+## [Deep Convolutional Neural Networks](https://www.tensorflow.org/tutorials/deep_cnn)  
 
 ** This tutorial covers classification of the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) data set.  The model is based on [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf).
 
@@ -69,7 +69,23 @@ can be input into `tf.layers.dense()`.
 
 ** The model adds [local response normalization](https://www.tensorflow.org/api_docs/python/tf/nn/local_response_normalization) as a step. This normalizes individual images by taking a weighted, squared sum of nearby images in the array.
 
-[How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
+** The model splits training and evaluation into separate scripts `cifar10_train.py` and `cifar10_eval.py`.
+
+** As an exercise, they suggest downloading the [Street View House Numbers](http://ufldl.stanford.edu/housenumbers/) database and re-running the AlexNet model. This requires doing some reading with MatLab, so on the back burner for the time being.
+
+## [How to Retrain an Image Classifier for New Categories](https://www.tensorflow.org/tutorials/image_retraining)  
+
+This retrains ImageNet to classify flowers.  First the [flower images](http://download.tensorflow.org/example_images/flower_photos.tgz) and the [retraining example](https://github.com/tensorflow/hub/raw/r0.1/examples/image_retraining/retrain.py) are downloaded.  The retraining is started using `python retrain.py --image_dir ~/flower_photo`, this creates the bottlenecks that help apply ImageNet to a new classification set.  The code then procedes to train and estimate accuracy.  The tutorial also shows how to use [TensorBoard](https://github.com/tensorflow/tensorboard) (e.g., `tensorboard --logdir /tmp/retrain_logs`).  The `label_image.py` [script](https://github.com/tensorflow/tensorflow/raw/master/tensorflow/examples/label_image/label_image.py) provides a starting point for using a retrained ImageNet for classification. One can also specify the dimensions of the images:
+
+```python
+python label_image.py \
+--graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--input_height=224 --input_width=224 \
+--image=$HOME/flower_photos/daisy/21652746_cc379e0eea_m.jpg
+```
+
 [Image Recognition](https://www.tensorflow.org/tutorials/image_recognition)  
 [Linear Rectifier]()  
 [Sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function)  
