@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: blog
-title: Title
+title: Cholla-PM Tests on Summit
 use_math: true
 ---
 
@@ -188,7 +188,8 @@ The tests were run out of the directory:
 ```
 
 This directory contained the cholla-mp executable, the cosmo_tiling.txt file:
-```######################################
+```
+######################################
 # number of grid cells in the x dimension
 nx=256
 # number of grid cells in the y dimension
