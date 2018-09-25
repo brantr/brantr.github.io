@@ -15,4 +15,4 @@ Brant was previously an Assistant Professor at the <a href="http://www.as.arizon
 
 Brant was also a member of the Hubble Ultra Deep Field 2012 project, the <a href="http://www.stsci.edu/hst/">Hubble Space Telescope</a> program to take the deepest ever image of the sky in the near infrared. The official UDF12 website can be found at <a href="http://udf12.arizona.edu">udf12.arizona.edu</a>.
 
-Brant also serves as co-Chair of the <a href="https://galaxies.science.lsst.org/">LSST Galaxies Science Collaboration</a>, a scientific organization charged with using the Large Synoptic Survey Telescope data to understand the formation and evolution of galaxies. The official LSST website can be found at <a href="http://www.lsst.org/lsst/">www.lsst.org</a>.
+During 2014-2018, Brant also served as co-Chair of the <a href="https://galaxies.science.lsst.org/">LSST Galaxies Science Collaboration</a>, a scientific organization charged with using the Large Synoptic Survey Telescope data to understand the formation and evolution of galaxies. The official LSST website can be found at <a href="http://www.lsst.org/lsst/">www.lsst.org</a>.
