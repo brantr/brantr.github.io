@@ -6,7 +6,7 @@ description: Brant Robertson's github.io Site
 logo: dm_small.png
 search: true
 url: http://brantr.github.io
-theme: jekyll-theme-midnight
+theme: jekyll-theme-minima
 
 # Jekyll configuration
 
