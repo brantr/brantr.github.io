@@ -20,15 +20,15 @@ Some instructions from Ryan Hausen on how to use Morpheus with Docker:
 
 1. Make a working directory where the data and scripts will go in my local machine. For example, I'll make an empty dir in Documents:
 ```bash  
-#local machine<br/>
-mkdir -p ~/Documents/sersic-images  
+        #local machine  
+        mkdir -p ~/Documents/sersic-images  
 ```
 
 2. Next, ssh into the remote machine and make a directory that will be mounted using sshfs and will mirror our local dir (leave this terminal open):
 ```bash  
-#remote machine\
-mkdir -p ~/Documents/sersic-images\
-cd ~/Documents/sersic-images  
+        #remote machine  
+        mkdir -p ~/Documents/sersic-images  
+        cd ~/Documents/sersic-images  
 ```
 
 3. Use sshfs to mount the remote dir to our local dir:
