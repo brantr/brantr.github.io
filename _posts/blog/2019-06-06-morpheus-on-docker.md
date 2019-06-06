@@ -19,7 +19,7 @@ Some instructions from Ryan Hausen on how to use Morpheus with Docker:
 >Here's my process that I use when working with Docker on a remote machine. I usually run a ssh session in the remote machine and edit files locally using sshfs.
 
 1. Make a working directory where the data and scripts will go in my local machine. For example, I'll make an empty dir in Documents:
-```bash  
+```python
         #local machine  
         mkdir -p ~/Documents/sersic-images  
 ```
