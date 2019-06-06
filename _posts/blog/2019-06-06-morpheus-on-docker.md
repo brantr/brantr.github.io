@@ -33,8 +33,8 @@ cd ~/Documents/sersic-images
 
 ### 3. Use sshfs to mount the remote dir to our local dir:
 {% highlight bash%}
-#USAGE: sshfs [user@]hostname:[directory] mountpoint\
-#local machine\
+#USAGE: sshfs [user@]hostname:[directory] mountpoint
+#local machine
 sshfs brant@sparkle:/home/brant/Documents/sersic-images ~/Documents/sersic-images  
 {% endhighlight %}
 
@@ -42,25 +42,25 @@ Now we have a remote terminal that is in a dir that is mounted locally. Add all 
 
 ### 4. Let's start using Docker in the remote terminal:
 {% highlight bash%}
-#remote machine\
-#run for cpu version\
+#remote machine
+#run for cpu version
 docker run -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-cpu  
 {% endhighlight %}
 
 {% highlight bash%}
-#remote machine\
-#run for gpu version\
+#remote machine
+#run for gpu version
 docker run --runtime=nvidia -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-gpu   
 {% endhighlight %}
 
 {% highlight bash%}
-#remote machine\
+#remote machine
 cd  /root/src   
 {% endhighlight %}
 
 {% highlight bash%}
-#remote machine\
-#confirm that all of the files that copied into your local dir are here too\
+#remote machine
+#confirm that all of the files that copied into your local dir are here too
 ls  
 {% endhighlight %}
 
