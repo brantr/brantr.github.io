@@ -32,21 +32,42 @@ Some instructions from Ryan Hausen on how to use Morpheus with Docker:
 <blockquote>  
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># local machine</span>  
 <span class="co"># USUAGE: sshfs [user@]hostname:[directory] mountpoint</span>  
+</blockquote></li>  
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># local machine</span>  
 <span class="kw">sshfs</span> brant@sparkle:/home/brant/Documents/sersic-images ~/Documents/sersic-images</code></pre></div>  
 </blockquote></li>  
+
 <li>Now we have a remote terminal that is in a dir that is mounted locally. Add all of the files that you want to work to the local dir and you can work from there.</li>  
 <li><p>Let's start using Docker in the remote terminal:</p>  
 <blockquote>  
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 
 <span class="co"># run for cpu version</span>  
+</blockquote></li>
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 <span class="kw">docker</span> run -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-cpu  
+</blockquote></li>
 
+</blockquote></li>
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 <span class="co">#run for gpu version</span>  
+</blockquote></li>
 <span class="kw">docker</span> run --runtime=nvidia -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-gpu  
+</blockquote></li>
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 <span class="kw">cd</span> /root/src  
+</blockquote></li>
 
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 <span class="co"># confirm that all of the files that copied into your local dir are here too</span>  
+</blockquote></li>
+<blockquote>  
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co">#remote machine</span>  
 <span class="kw">ls</span></code></pre></div>  
 </blockquote></li>
 <li>Now you're in the Docker Image! When you make changes to your local dir, they will get mirrored toyour remote dir which is mounted in Docker, so they will be reflected in the Docker image as well.</li>
