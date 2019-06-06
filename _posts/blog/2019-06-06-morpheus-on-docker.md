@@ -21,21 +21,27 @@ Some instructions from Ryan Hausen on how to use Morpheus with Docker:
 1. Make a working directory where the data and scripts will go in my local machine. For example, I'll make an empty dir in Documents:
 ```bash
 #local machine  
+
 mkdir -p ~/Documents/sersic-images  
 ```
 
 2. Next, ssh into the remote machine and make a directory that will be mounted using sshfs and will mirror our local dir (leave this terminal open):
 ```bash
 #remote machine  
+
 mkdir -p ~/Documents/sersic-imagesc    
+
 cd ~/Documents/sersic-images  
 ```
 
 3. Use sshfs to mount the remote dir to our local dir:
 ```bash
 #local machine  
+
 #USUAGE: sshfs [user@]hostname:[directory] mountpoint  
+
 #local machine</span>    
+
 sshfs brant@sparkle:/home/brant/Documents/sersic-images ~/Documents/sersic-images  
 ```
 
@@ -44,23 +50,28 @@ sshfs brant@sparkle:/home/brant/Documents/sersic-images ~/Documents/sersic-image
 5. Let's start using Docker in the remote terminal:
 ```bash
 #remote machine  
+
 #run for cpu version  
+
 docker run -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-cpu  
 ```
 ```bash
 #remote machine  
+
 #run for gpu version  
+
 docker run --runtime=nvidia -it -v ~/Documents/sersic-images:/root/src morpheusastro/morpheus:latest-gpu   
 ```
-
 ```bash
 #remote machine  
+
 cd  /root/src   
 ```
-
 ```bash
 #remote machine  
+
 #confirm that all of the files that copied into your local dir are here too  
+
 ls  
 ```
 
