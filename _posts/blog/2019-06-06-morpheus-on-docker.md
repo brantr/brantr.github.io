@@ -20,7 +20,7 @@ Some instructions from Ryan Hausen on how to use Morpheus with Docker:
 
 1. Make a working directory where the data and scripts will go in my local machine. For example, I'll make an empty dir in Documents:
 ```bash  
-#local machine\
+#local machine<br/>
 mkdir -p ~/Documents/sersic-images  
 ```
 
