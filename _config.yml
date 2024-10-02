@@ -6,8 +6,8 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
-#remote_theme: pages-themes/minimal@v0.2.0
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
+#remote_theme: pages-themes/tactile@v0.2.0
 
 # Basic Site Settings
 locale                   : "en-US"
