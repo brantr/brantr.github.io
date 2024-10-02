@@ -8,7 +8,8 @@ search: true
 url: http://brantr.github.io
 # theme: jekyll-theme-minimal
 # remote_theme: pages-themes/tactile@v0.2.0
-theme: jekyll-theme-so-simple
+# theme: jekyll-theme-so-simple
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
 # Jekyll configuration
 
