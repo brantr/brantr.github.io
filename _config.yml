@@ -25,3 +25,4 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+skin: "/assets/css/skins/dark.css"
