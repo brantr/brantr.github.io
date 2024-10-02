@@ -1,1 +1,0 @@
-title: JADES Santa Cruz 2025 Team Meeting
