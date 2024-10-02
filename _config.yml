@@ -1,2 +1,27 @@
 title: Feedback 
 description: Brant Robertson's Homepage
+url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+date_format: "%B %-d, %Y"
+mathjax:
+  enable: true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+markdown: kramdown
+feed:
+  path: atom.xml
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
