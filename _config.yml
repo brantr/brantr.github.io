@@ -7,7 +7,8 @@ logo: dm_small.png
 search: true
 url: http://brantr.github.io
 # theme: jekyll-theme-minimal
-remote_theme: pages-themes/tactile@v0.2.0
+# remote_theme: pages-themes/tactile@v0.2.0
+theme: jekyll-theme-so-simple
 
 # Jekyll configuration
 
