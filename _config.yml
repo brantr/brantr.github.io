@@ -7,7 +7,6 @@
 # server process.
 
 remote_theme: pages-themes/minimal@v0.2.0
-plug
 
 # Basic Site Settings
 locale                   : "en-US"
