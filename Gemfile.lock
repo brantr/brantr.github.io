@@ -303,8 +303,11 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed (~> 0.11)
-  tzinfo-data
+  jekyll
+  jekyll-feed
+  jekyll-sitemap
+  jemoji
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.5.18
