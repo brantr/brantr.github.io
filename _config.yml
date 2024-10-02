@@ -13,8 +13,9 @@ remote_theme: pages-themes/minimal@v0.2.0
 locale                   : "en-US"
 title                    : "Feedback"
 title_separator          : "-"
+logo                     : assets/img/banner.png
 name                     : &name "Brant Robertson"
-description              : &description ""
+description              : &description "Computational Astrophysics at UC Santa Cruz"
 url                      : https://brantr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 # repository               : "academicpages/academicpages.github.io"
